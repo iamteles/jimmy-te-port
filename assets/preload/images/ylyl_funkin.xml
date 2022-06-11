@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="ylyl funkin.png">
+	<!-- Created with Adobe Animate version 19.2.0.405 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="logo bumbin0000" x="10" y="10" width="1318" height="668"/>
+	<SubTexture name="logo bumbin0001" x="1338" y="10" width="1318" height="668"/>
+	<SubTexture name="logo bumbin0002" x="1338" y="10" width="1318" height="668"/>
+	<SubTexture name="logo bumbin0003" x="1338" y="10" width="1318" height="668"/>
+	<SubTexture name="logo bumbin0004" x="2666" y="10" width="1318" height="668"/>
+	<SubTexture name="logo bumbin0005" x="2666" y="10" width="1318" height="668"/>
+	<SubTexture name="logo bumbin0006" x="10" y="688" width="1318" height="668"/>
+	<SubTexture name="logo bumbin0007" x="10" y="688" width="1318" height="668"/>
+	<SubTexture name="logo bumbin0008" x="10" y="688" width="1318" height="668"/>
+	<SubTexture name="logo bumbin0009" x="10" y="688" width="1318" height="668"/>
+	<SubTexture name="logo bumbin0010" x="10" y="688" width="1318" height="668"/>
+	<SubTexture name="logo bumbin0011" x="10" y="688" width="1318" height="668"/>
+	<SubTexture name="logo bumbin0012" x="10" y="688" width="1318" height="668"/>
+	<SubTexture name="logo bumbin0013" x="10" y="688" width="1318" height="668"/>
+	<SubTexture name="logo bumbin0014" x="10" y="688" width="1318" height="668"/>
+	<SubTexture name="logo bumbin0015" x="10" y="688" width="1318" height="668"/>
+</TextureAtlas>
