@@ -1,7 +1,7 @@
 {
 	"song": {
 		"player1": "bf",
-		"player2": "bryce",
+		"player2": "dad",
 		"notes": [
 			{
 				"lengthInSteps": 16,
@@ -6300,6 +6300,56 @@
 						115982.142857143,
 						5,
 						0
+					],
+					[
+						116008.928571429,
+						6,
+						0
+					],
+					[
+						116035.714285714,
+						7,
+						0
+					],
+					[
+						116035.714285714,
+						5,
+						0
+					],
+					[
+						116062.5,
+						4,
+						0
+					],
+					[
+						116089.285714286,
+						5,
+						0
+					],
+					[
+						116089.285714286,
+						6,
+						0
+					],
+					[
+						116116.071428571,
+						7,
+						0
+					],
+					[
+						116142.857142857,
+						6,
+						0
+					],
+					[
+						116142.857142857,
+						4,
+						0
+					],
+					[
+						116142.857142857,
+						5,
+						0
 					]
 				],
 				"typeOfSection": 0,
@@ -8957,30 +9007,66 @@
 			},
 			{
 				"lengthInSteps": 16,
-				"altAnim": false,
 				"typeOfSection": 0,
 				"sectionNotes": [],
+				"altAnim": false,
 				"bpm": 140,
 				"changeBPM": false,
 				"mustHitSection": true
 			},
 			{
 				"lengthInSteps": 16,
-				"altAnim": false,
 				"typeOfSection": 0,
 				"sectionNotes": [],
+				"altAnim": false,
 				"bpm": 140,
 				"changeBPM": false,
 				"mustHitSection": true
 			},
 			{
 				"lengthInSteps": 16,
-				"altAnim": false,
 				"typeOfSection": 0,
 				"sectionNotes": [],
+				"altAnim": false,
 				"bpm": 140,
 				"changeBPM": false,
 				"mustHitSection": true
+			},
+			{
+				"lengthInSteps": 16,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"altAnim": false,
+				"bpm": 140,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"sectionNotes": [],
+				"typeOfSection": 0,
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"mustHitSection": true,
+				"changeBPM": false,
+				"bpm": 140
+			},
+			{
+				"sectionNotes": [],
+				"typeOfSection": 0,
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"mustHitSection": true,
+				"changeBPM": false,
+				"bpm": 140
+			},
+			{
+				"sectionNotes": [],
+				"typeOfSection": 0,
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"mustHitSection": true,
+				"changeBPM": false,
+				"bpm": 140
 			},
 			{
 				"lengthInSteps": 16,
@@ -8996,7 +9082,7 @@
 		"song": "cutie-patootie",
 		"needsVoices": true,
 		"validScore": true,
-		"speed": 3,
+		"speed": 3.3,
 		"bpm": 140
 	}
 }
