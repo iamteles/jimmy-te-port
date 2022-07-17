@@ -1,0 +1,366 @@
+{
+	"song": {
+		"notes": [
+			{
+				"sectionNotes": [
+					[
+						0,
+						0,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					],
+					[
+						0,
+						1,
+						"changeCameraBeat",
+						[
+							1,
+							4,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						10105.2631578947,
+						0,
+						"changeCameraBeat",
+						[
+							1,
+							4,
+							0
+						]
+					],
+					[
+						10105.2631578947,
+						1,
+						"vignette",
+						[
+							"ENABLE",
+							0.05,
+							0
+						]
+					],
+					[
+						10105.2631578947,
+						2,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						30315.7894736842,
+						0,
+						"changeCameraBeat",
+						[
+							2,
+							1,
+							0
+						]
+					],
+					[
+						30315.7894736842,
+						1,
+						"vignette",
+						[
+							"DISABLE",
+							0.1,
+							0
+						]
+					],
+					[
+						30315.7894736842,
+						2,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						50526.3157894737,
+						0,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					],
+					[
+						50526.3157894737,
+						1,
+						"changeCameraBeat",
+						[
+							1,
+							2,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						60631.5789473684,
+						0,
+						"changeZoom",
+						[
+							0.25,
+							0,
+							0
+						]
+					],
+					[
+						60631.5789473684,
+						1,
+						"changeCameraBeat",
+						[
+							1,
+							4,
+							0
+						]
+					],
+					[
+						60631.5789473684,
+						2,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					],
+					[
+						60631.5789473684,
+						3,
+						"vignette",
+						[
+							"ENABLE",
+							0.2,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						70736.8421052631,
+						0,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					],
+					[
+						70736.8421052631,
+						1,
+						"changeCameraBeat",
+						[
+							2,
+							1,
+							0
+						]
+					],
+					[
+						70736.8421052631,
+						2,
+						"vignette",
+						[
+							"DISABLE",
+							0.1,
+							0
+						]
+					],
+					[
+						70736.8421052631,
+						3,
+						"changeZoom",
+						[
+							0,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			}
+		]
+	}
+}

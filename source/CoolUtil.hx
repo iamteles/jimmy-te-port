@@ -15,9 +15,11 @@ import flixel.FlxSprite;
 import flixel.text.FlxText;
 using StringTools;
 
+import flixel.math.FlxRandom;
+
 class CoolUtil
 {
-	public static var difficultyArray:Array<String> = ['EASY', "NORMAL", "HARD", "FUNKY"];
+	public static var difficultyArray:Array<String> = ['EASY', "NORMAL", "HARD", "HARDPLUS", "HARDPLUSPLUS", "TRADITIONAL"];
 
 	public static function getTextFileContent(path:String):String // returns the content of the text file at runtime ig
 	{
@@ -80,13 +82,13 @@ class CoolUtil
 	public static function preloadImages(loadState:MusicBeatState)
 	{
 		FlxGraphic.defaultPersist = FlxG.save.data.preloadCharacters;
-		if(FlxG.save.data.preloadCharacters)
-		{
-			FlxG.switchState(new PreloadingState(loadState));
-		}
-		else
-			LoadingState.loadAndSwitchState(loadState, true);
-		
+		//if(FlxG.save.data.preloadCharacters)
+		//{
+		//	FlxG.switchState(new PreloadingState(loadState));
+		//}
+		//else
+		//	LoadingState.loadAndSwitchState(loadState, true);
+		FlxG.switchState(new PreloadingState(loadState));
 	}
 	
 	public static function camLerpShit(a:Float):Float
@@ -113,21 +115,24 @@ class PreloadingState extends MusicBeatState
 	{
 		super.create();
 		
-		var loadingSprite:Sprite = new Sprite(150, 560);
-		loadingSprite.frames = Paths.getSparrowAtlas('Loading');
-		loadingSprite.animation.addByPrefix('loading', 'LOADING', 24, true);
-		loadingSprite.animation.play('loading');
-		loadingSprite.antialiasing = true;
-		loadingSprite.setGraphicSize(Std.int(loadingSprite.width * 2));
-		add(loadingSprite);
-		var logo:Sprite = new Sprite(800, -30).loadGraphics(Paths.image("Logo_TE_x_FNF"));
-		logo.setGraphicSize(Std.int(logo.width * 0.9));
-		logo.antialiasing = true;
-		add(logo);
-		sys.thread.Thread.create(()->
-		{
-			caching();
-		});
+		var randomBG:Int = FlxG.random.int(1,4);
+
+		var bg:Sprite = new Sprite().loadGraphics(Paths.image('loadingScreens/load' + randomBG));
+		//var bg:Sprite = new Sprite().loadGraphics(Paths.image('loadingScreens/load'));
+		bg.antialiasing = true;
+		add(bg);
+			
+		if(!FlxG.save.data.preloadCharacters)
+			{
+				LoadingState.loadAndSwitchState(loadState, true);
+			}
+		else
+			{
+				sys.thread.Thread.create(()->
+				{
+					caching();
+				});				
+			}
 		
 	}
 	function caching()

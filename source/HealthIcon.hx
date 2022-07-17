@@ -45,7 +45,7 @@ class HealthIcon extends Sprite
 
 	public function changeIcon(char:String)
 	{
-		if("bf-pixel" != char && "bf-old" != char && "senpai-angry" != char && "senpai-pissed" != char)
+		if("bf-pixel" != char && "bf-old" != char && "senpai-angry" != char && "senpai-pissed" != char && "jeffry-bf" != char)
 		{
 			char = char.split("-")[0];
 		} 

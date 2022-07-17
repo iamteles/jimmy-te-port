@@ -1,7 +1,7 @@
 {
 	"song": {
-		"player1": "bf",
-		"player2": "dad",
+		"player1": "chickfila",
+		"player2": "maid",
 		"notes": [
 			{
 				"lengthInSteps": 16,
@@ -4483,7 +4483,7 @@
 		"gfVersion": "gf",
 		"events": [],
 		"player3": null,
-		"song": "Bopeebo",
+		"song": "maid",
 		"validScore": true,
 		"needsVoices": true,
 		"speed": 2,

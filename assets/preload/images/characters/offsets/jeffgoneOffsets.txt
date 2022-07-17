@@ -1,0 +1,6 @@
+idle 10 170
+singUP 264 260
+singRIGHT -20 166
+singLEFT 119 221
+singDOWN 110 -180
+scared 50 170

@@ -1,0 +1,50 @@
+{
+	"song": {
+		"notes": [
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						10378.3783783784,
+						0,
+						"changeCameraBeat",
+						[
+							2,
+							1,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			}
+		]
+	}
+}

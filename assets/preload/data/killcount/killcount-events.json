@@ -1,0 +1,882 @@
+{
+	"song": {
+		"notes": [
+			{
+				"sectionNotes": [
+					[
+						0,
+						0,
+						"flashCamera",
+						[
+							9.59999999999998,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						9600,
+						0,
+						"changeCameraBeat",
+						[
+							1,
+							2,
+							0
+						]
+					],
+					[
+						9600,
+						1,
+						"changeZoom",
+						[
+							0.3,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						19200,
+						0,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					],
+					[
+						19200,
+						1,
+						"changeZoom",
+						[
+							0.2,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						28800,
+						0,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					],
+					[
+						28800,
+						1,
+						"changeZoom",
+						[
+							0,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						31800,
+						3,
+						"playDadAnim",
+						[
+							"scared",
+							0,
+							0
+						]
+					],
+					[
+						31800,
+						2,
+						"changeZoom",
+						[
+							0.45,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": [
+					[
+						32400,
+						3,
+						"playDadAnim",
+						[
+							"scared",
+							0,
+							0
+						]
+					],
+					[
+						32550,
+						3,
+						"playDadAnim",
+						[
+							"scared",
+							0,
+							0
+						]
+					],
+					[
+						32700,
+						3,
+						"playDadAnim",
+						[
+							"scared",
+							0,
+							0
+						]
+					],
+					[
+						32850,
+						3,
+						"playDadAnim",
+						[
+							"scared",
+							0,
+							0
+						]
+					],
+					[
+						33000,
+						3,
+						"playDadAnim",
+						[
+							"scared",
+							0,
+							0
+						]
+					],
+					[
+						33150,
+						3,
+						"playDadAnim",
+						[
+							"scared",
+							0,
+							0
+						]
+					],
+					[
+						33300,
+						3,
+						"playDadAnim",
+						[
+							"scared",
+							0,
+							0
+						]
+					],
+					[
+						33450,
+						3,
+						"playDadAnim",
+						[
+							"scared",
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": [
+					[
+						33600,
+						0,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					],
+					[
+						33600,
+						1,
+						"changeZoom",
+						[
+							0,
+							0,
+							0
+						]
+					],
+					[
+						33600,
+						2,
+						"changeCameraBeat",
+						[
+							2,
+							1,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						52800,
+						0,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					],
+					[
+						52800,
+						1,
+						"changeCameraBeat",
+						[
+							3,
+							2,
+							0
+						]
+					],
+					[
+						52800,
+						3,
+						"changeZoom",
+						[
+							0.2,
+							0,
+							0
+						]
+					],
+					[
+						52800,
+						2,
+						"vignette",
+						[
+							"ENABLE",
+							0.2,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						62400,
+						0,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					],
+					[
+						62400,
+						1,
+						"changeCameraBeat",
+						[
+							2,
+							1,
+							0
+						]
+					],
+					[
+						62400,
+						2,
+						"vignette",
+						[
+							"DISABLE",
+							0.2,
+							0
+						]
+					],
+					[
+						62400,
+						3,
+						"changeZoom",
+						[
+							0,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						72000,
+						0,
+						"changeZoom",
+						[
+							0.35,
+							0,
+							0
+						]
+					],
+					[
+						72000,
+						1,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					],
+					[
+						72000,
+						2,
+						"vignette",
+						[
+							"ENABLE",
+							0.2,
+							0
+						]
+					],
+					[
+						72000,
+						3,
+						"changeCameraBeat",
+						[
+							1,
+							4,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						74400,
+						0,
+						"changeCameraBeat",
+						[
+							2,
+							1,
+							0
+						]
+					],
+					[
+						74400,
+						1,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					],
+					[
+						74400,
+						2,
+						"changeZoom",
+						[
+							0,
+							0,
+							0
+						]
+					],
+					[
+						74400,
+						3,
+						"vignette",
+						[
+							"DISABLE",
+							0.1,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						81600,
+						0,
+						"changeCameraBeat",
+						[
+							3,
+							2,
+							0
+						]
+					],
+					[
+						81600,
+						1,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					],
+					[
+						81600,
+						2,
+						"changeZoom",
+						[
+							0.2,
+							0,
+							0
+						]
+					],
+					[
+						81600,
+						3,
+						"vignette",
+						[
+							"ENABLE",
+							0.1,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						100800,
+						1,
+						"changeCameraBeat",
+						[
+							3,
+							1,
+							0
+						]
+					],
+					[
+						100800,
+						0,
+						"changeZoom",
+						[
+							0.35,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						110400,
+						0,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					],
+					[
+						110400,
+						1,
+						"changeZoom",
+						[
+							0,
+							0,
+							0
+						]
+					],
+					[
+						110400,
+						2,
+						"wavyStrumLine",
+						[
+							"ENABLE",
+							0,
+							0
+						]
+					],
+					[
+						110400,
+						3,
+						"vignette",
+						[
+							"DISABLE",
+							0.1,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						129600,
+						0,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					],
+					[
+						129600,
+						1,
+						"wavyStrumLine",
+						[
+							"DISABLE",
+							0,
+							0
+						]
+					],
+					[
+						129600,
+						2,
+						"changeZoom",
+						[
+							0.3,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						139200,
+						0,
+						"callFunction",
+						[
+							"blackOut",
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			}
+		]
+	}
+}

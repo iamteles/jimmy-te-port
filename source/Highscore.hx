@@ -99,7 +99,11 @@ class Highscore
 		else if (diff == 2)
 			daSong += '-hard';
 		else if (diff == 3)
-			daSong += '-funky';
+			daSong += '-hardplus';
+		else if (diff == 4)
+			daSong += '-hardplusplus';
+		else if (diff == 5)
+			daSong += '-trad';
 
 		return daSong;
 	}

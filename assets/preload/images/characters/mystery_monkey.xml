@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Mystery_Monkey.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="ALTDownsing0000" x="10" y="10" width="679" height="652" frameX="0" frameY="-51" frameWidth="679" frameHeight="704"/>
+	<SubTexture name="ALTDownsing0001" x="771" y="10" width="675" height="657" frameX="-3" frameY="-46" frameWidth="679" frameHeight="704"/>
+	<SubTexture name="ALTDownsing0002" x="1528" y="10" width="666" height="672" frameX="-10" frameY="-32" frameWidth="679" frameHeight="704"/>
+	<SubTexture name="ALTDownsing0003" x="2276" y="10" width="667" height="696" frameX="-12" frameY="-8" frameWidth="679" frameHeight="704"/>
+	<SubTexture name="ALTDownsing0004" x="3025" y="10" width="667" height="691" frameX="-12" frameY="-9" frameWidth="679" frameHeight="704"/>
+	<SubTexture name="ALTDownsing0005" x="3774" y="10" width="666" height="687" frameX="-12" frameY="-13" frameWidth="679" frameHeight="704"/>
+	<SubTexture name="ALTDownsing0006" x="4522" y="10" width="667" height="696" frameX="-12" frameY="-7" frameWidth="679" frameHeight="704"/>
+	<SubTexture name="ALTDownsing0007" x="5271" y="10" width="666" height="700" frameX="-13" frameY="-3" frameWidth="679" frameHeight="704"/>
+	<SubTexture name="ALTDownsing0008" x="6019" y="10" width="667" height="702" frameX="-12" frameY="-2" frameWidth="679" frameHeight="704"/>
+	<SubTexture name="ALTDownsing0009" x="6768" y="10" width="666" height="704" frameX="-13" frameY="0" frameWidth="679" frameHeight="704"/>
+	<SubTexture name="AltLeftSing0000" x="7516" y="10" width="660" height="728" frameX="0" frameY="-7" frameWidth="692" frameHeight="736"/>
+	<SubTexture name="AltLeftSing0001" x="10" y="820" width="659" height="726" frameX="-4" frameY="-9" frameWidth="692" frameHeight="736"/>
+	<SubTexture name="AltLeftSing0002" x="751" y="820" width="655" height="730" frameX="-17" frameY="-6" frameWidth="692" frameHeight="736"/>
+	<SubTexture name="AltLeftSing0003" x="1488" y="820" width="647" height="735" frameX="-40" frameY="-1" frameWidth="692" frameHeight="736"/>
+	<SubTexture name="AltLeftSing0004" x="2217" y="820" width="645" height="730" frameX="-40" frameY="-2" frameWidth="692" frameHeight="736"/>
+	<SubTexture name="AltLeftSing0005" x="2944" y="820" width="645" height="730" frameX="-37" frameY="-2" frameWidth="692" frameHeight="736"/>
+	<SubTexture name="AltLeftSing0006" x="3671" y="820" width="647" height="734" frameX="-41" frameY="-1" frameWidth="692" frameHeight="736"/>
+	<SubTexture name="AltLeftSing0007" x="4400" y="820" width="647" height="735" frameX="-43" frameY="0" frameWidth="692" frameHeight="736"/>
+	<SubTexture name="AltLeftSing0008" x="5129" y="820" width="648" height="736" frameX="-43" frameY="0" frameWidth="692" frameHeight="736"/>
+	<SubTexture name="AltLeftSing0009" x="5859" y="820" width="648" height="736" frameX="-44" frameY="0" frameWidth="692" frameHeight="736"/>
+	<SubTexture name="AltRightSing0000" x="6589" y="820" width="905" height="703" frameX="-1" frameY="-25" frameWidth="906" frameHeight="729"/>
+	<SubTexture name="AltRightSing0001" x="10" y="1638" width="900" height="704" frameX="-1" frameY="-24" frameWidth="906" frameHeight="729"/>
+	<SubTexture name="AltRightSing0002" x="992" y="1638" width="883" height="712" frameX="-1" frameY="-17" frameWidth="906" frameHeight="729"/>
+	<SubTexture name="AltRightSing0003" x="1957" y="1638" width="856" height="724" frameX="0" frameY="-5" frameWidth="906" frameHeight="729"/>
+	<SubTexture name="AltRightSing0004" x="2895" y="1638" width="857" height="719" frameX="0" frameY="-5" frameWidth="906" frameHeight="729"/>
+	<SubTexture name="AltRightSing0005" x="3834" y="1638" width="861" height="717" frameX="0" frameY="-7" frameWidth="906" frameHeight="729"/>
+	<SubTexture name="AltRightSing0006" x="4777" y="1638" width="855" height="724" frameX="0" frameY="-4" frameWidth="906" frameHeight="729"/>
+	<SubTexture name="AltRightSing0007" x="5714" y="1638" width="849" height="726" frameX="0" frameY="-2" frameWidth="906" frameHeight="729"/>
+	<SubTexture name="AltRightSing0008" x="6645" y="1638" width="848" height="728" frameX="0" frameY="-1" frameWidth="906" frameHeight="729"/>
+	<SubTexture name="AltRightSing0009" x="10" y="2448" width="847" height="729" frameX="0" frameY="0" frameWidth="906" frameHeight="729"/>
+	<SubTexture name="AltUpSing0000" x="939" y="2448" width="712" height="789" frameX="-8" frameY="0" frameWidth="731" frameHeight="790"/>
+	<SubTexture name="AltUpSing0001" x="1733" y="2448" width="715" height="786" frameX="-6" frameY="-3" frameWidth="731" frameHeight="790"/>
+	<SubTexture name="AltUpSing0002" x="2530" y="2448" width="721" height="779" frameX="-4" frameY="-11" frameWidth="731" frameHeight="790"/>
+	<SubTexture name="AltUpSing0003" x="3333" y="2448" width="730" height="766" frameX="0" frameY="-24" frameWidth="731" frameHeight="790"/>
+	<SubTexture name="AltUpSing0004" x="4145" y="2448" width="729" height="761" frameX="-1" frameY="-24" frameWidth="731" frameHeight="790"/>
+	<SubTexture name="AltUpSing0005" x="4956" y="2448" width="729" height="763" frameX="-1" frameY="-22" frameWidth="731" frameHeight="790"/>
+	<SubTexture name="AltUpSing0006" x="5767" y="2448" width="729" height="764" frameX="-1" frameY="-25" frameWidth="731" frameHeight="790"/>
+	<SubTexture name="AltUpSing0007" x="6578" y="2448" width="731" height="762" frameX="0" frameY="-27" frameWidth="731" frameHeight="790"/>
+	<SubTexture name="AltUpSing0008" x="7391" y="2448" width="731" height="762" frameX="0" frameY="-28" frameWidth="731" frameHeight="790"/>
+	<SubTexture name="AltUpSing0009" x="10" y="3319" width="731" height="761" frameX="0" frameY="-29" frameWidth="731" frameHeight="790"/>
+	<SubTexture name="DownSingPose0000" x="823" y="3319" width="706" height="735" frameX="0" frameY="-3" frameWidth="706" frameHeight="739"/>
+	<SubTexture name="DownSingPose0001" x="1611" y="3319" width="706" height="735" frameX="0" frameY="-3" frameWidth="706" frameHeight="739"/>
+	<SubTexture name="DownSingPose0002" x="2399" y="3319" width="703" height="739" frameX="0" frameY="0" frameWidth="706" frameHeight="739"/>
+	<SubTexture name="DownSingPose0003" x="3184" y="3319" width="703" height="739" frameX="0" frameY="0" frameWidth="706" frameHeight="739"/>
+	<SubTexture name="DownSingPose0004" x="3969" y="3319" width="701" height="734" frameX="-3" frameY="-1" frameWidth="706" frameHeight="739"/>
+	<SubTexture name="DownSingPose0005" x="3969" y="3319" width="701" height="734" frameX="-3" frameY="-1" frameWidth="706" frameHeight="739"/>
+	<SubTexture name="DownSingPose0006" x="4752" y="3319" width="701" height="737" frameX="-3" frameY="-1" frameWidth="706" frameHeight="739"/>
+	<SubTexture name="DownSingPose0007" x="4752" y="3319" width="701" height="737" frameX="-3" frameY="-1" frameWidth="706" frameHeight="739"/>
+	<SubTexture name="DownSingPose0008" x="5535" y="3319" width="701" height="738" frameX="-3" frameY="-1" frameWidth="706" frameHeight="739"/>
+	<SubTexture name="Its Too Late0000" x="6318" y="3319" width="698" height="740" frameX="0" frameY="-1" frameWidth="704" frameHeight="742"/>
+	<SubTexture name="Its Too Late0001" x="7098" y="3319" width="698" height="740" frameX="0" frameY="-1" frameWidth="704" frameHeight="742"/>
+	<SubTexture name="Its Too Late0002" x="10" y="4162" width="700" height="736" frameX="0" frameY="-6" frameWidth="704" frameHeight="742"/>
+	<SubTexture name="Its Too Late0003" x="792" y="4162" width="700" height="736" frameX="0" frameY="-6" frameWidth="704" frameHeight="742"/>
+	<SubTexture name="Its Too Late0004" x="1574" y="4162" width="702" height="733" frameX="-1" frameY="-5" frameWidth="704" frameHeight="742"/>
+	<SubTexture name="Its Too Late0005" x="2358" y="4162" width="702" height="733" frameX="-1" frameY="-5" frameWidth="704" frameHeight="742"/>
+	<SubTexture name="Its Too Late0006" x="3142" y="4162" width="695" height="733" frameX="-6" frameY="-8" frameWidth="704" frameHeight="742"/>
+	<SubTexture name="Its Too Late0007" x="3919" y="4162" width="698" height="733" frameX="-6" frameY="-8" frameWidth="704" frameHeight="742"/>
+	<SubTexture name="Its Too Late0008" x="4699" y="4162" width="700" height="739" frameX="-2" frameY="-3" frameWidth="704" frameHeight="742"/>
+	<SubTexture name="Its Too Late0009" x="5481" y="4162" width="700" height="739" frameX="-2" frameY="-3" frameWidth="704" frameHeight="742"/>
+	<SubTexture name="Its Too Late0010" x="6263" y="4162" width="697" height="736" frameX="-2" frameY="-1" frameWidth="704" frameHeight="742"/>
+	<SubTexture name="Its Too Late0011" x="7042" y="4162" width="697" height="736" frameX="-2" frameY="-1" frameWidth="704" frameHeight="742"/>
+	<SubTexture name="Its Too Late0012" x="10" y="4983" width="698" height="741" frameX="0" frameY="0" frameWidth="704" frameHeight="742"/>
+	<SubTexture name="Its Too Late0013" x="790" y="4983" width="698" height="741" frameX="0" frameY="0" frameWidth="704" frameHeight="742"/>
+	<SubTexture name="LeftSingPose0000" x="1570" y="4983" width="697" height="741" frameX="0" frameY="0" frameWidth="700" frameHeight="742"/>
+	<SubTexture name="LeftSingPose0001" x="2349" y="4983" width="697" height="741" frameX="0" frameY="0" frameWidth="700" frameHeight="742"/>
+	<SubTexture name="LeftSingPose0002" x="3128" y="4983" width="698" height="742" frameX="-1" frameY="0" frameWidth="700" frameHeight="742"/>
+	<SubTexture name="LeftSingPose0003" x="3908" y="4983" width="698" height="742" frameX="-1" frameY="0" frameWidth="700" frameHeight="742"/>
+	<SubTexture name="LeftSingPose0004" x="4688" y="4983" width="698" height="738" frameX="-2" frameY="0" frameWidth="700" frameHeight="742"/>
+	<SubTexture name="LeftSingPose0005" x="4688" y="4983" width="698" height="738" frameX="-2" frameY="0" frameWidth="700" frameHeight="742"/>
+	<SubTexture name="LeftSingPose0006" x="5468" y="4983" width="698" height="741" frameX="-2" frameY="0" frameWidth="700" frameHeight="742"/>
+	<SubTexture name="LeftSingPose0007" x="5468" y="4983" width="698" height="741" frameX="-2" frameY="0" frameWidth="700" frameHeight="742"/>
+	<SubTexture name="LeftSingPose0008" x="6248" y="4983" width="698" height="742" frameX="-2" frameY="0" frameWidth="700" frameHeight="742"/>
+	<SubTexture name="LeftSingPose0009" x="6248" y="4983" width="698" height="742" frameX="-2" frameY="0" frameWidth="700" frameHeight="742"/>
+	<SubTexture name="RightSingPose0000" x="7028" y="4983" width="703" height="740" frameX="-3" frameY="-1" frameWidth="706" frameHeight="742"/>
+	<SubTexture name="RightSingPose0001" x="10" y="5807" width="703" height="740" frameX="-3" frameY="-1" frameWidth="706" frameHeight="742"/>
+	<SubTexture name="RightSingPose0002" x="795" y="5807" width="703" height="741" frameX="-1" frameY="-1" frameWidth="706" frameHeight="742"/>
+	<SubTexture name="RightSingPose0003" x="1580" y="5807" width="703" height="741" frameX="-1" frameY="-1" frameWidth="706" frameHeight="742"/>
+	<SubTexture name="RightSingPose0004" x="2365" y="5807" width="702" height="738" frameX="0" frameY="0" frameWidth="706" frameHeight="742"/>
+	<SubTexture name="RightSingPose0005" x="2365" y="5807" width="702" height="738" frameX="0" frameY="0" frameWidth="706" frameHeight="742"/>
+	<SubTexture name="RightSingPose0006" x="3149" y="5807" width="702" height="741" frameX="0" frameY="0" frameWidth="706" frameHeight="742"/>
+	<SubTexture name="RightSingPose0007" x="3149" y="5807" width="702" height="741" frameX="0" frameY="0" frameWidth="706" frameHeight="742"/>
+	<SubTexture name="RightSingPose0008" x="3933" y="5807" width="702" height="742" frameX="0" frameY="0" frameWidth="706" frameHeight="742"/>
+	<SubTexture name="UpSingPose0000" x="4717" y="5807" width="709" height="744" frameX="0" frameY="0" frameWidth="709" frameHeight="745"/>
+	<SubTexture name="UpSingPose0001" x="5508" y="5807" width="709" height="744" frameX="0" frameY="0" frameWidth="709" frameHeight="745"/>
+	<SubTexture name="UpSingPose0002" x="6299" y="5807" width="704" height="744" frameX="-5" frameY="-1" frameWidth="709" frameHeight="745"/>
+	<SubTexture name="UpSingPose0003" x="7085" y="5807" width="704" height="744" frameX="-5" frameY="-1" frameWidth="709" frameHeight="745"/>
+	<SubTexture name="UpSingPose0004" x="10" y="6633" width="701" height="738" frameX="-6" frameY="-2" frameWidth="709" frameHeight="745"/>
+	<SubTexture name="UpSingPose0005" x="10" y="6633" width="701" height="738" frameX="-6" frameY="-2" frameWidth="709" frameHeight="745"/>
+	<SubTexture name="UpSingPose0006" x="793" y="6633" width="701" height="742" frameX="-6" frameY="-2" frameWidth="709" frameHeight="745"/>
+	<SubTexture name="UpSingPose0007" x="793" y="6633" width="701" height="742" frameX="-6" frameY="-2" frameWidth="709" frameHeight="745"/>
+	<SubTexture name="UpSingPose0008" x="1576" y="6633" width="701" height="743" frameX="-6" frameY="-2" frameWidth="709" frameHeight="745"/>
+</TextureAtlas>

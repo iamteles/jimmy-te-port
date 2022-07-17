@@ -1,6 +1,6 @@
 {
 	"song": {
-		"player1": "bf",
+		"player1": "chickfila",
 		"events": [],
 		"gfVersion": "gf",
 		"notes": [
@@ -7803,7 +7803,7 @@
 				"mustHitSection": true
 			}
 		],
-		"player2": "jimmy",
+		"player2": "maid",
 		"player3": "gf",
 		"song": "Maid",
 		"needsVoices": true,

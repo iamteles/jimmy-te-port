@@ -40,6 +40,10 @@ class FreeplayState extends MusicBeatState
 	var lerpCombo:Int = 0;
 	var intendedCombo:Int = 0;
 
+	var maxDiff:Int = 0;
+
+	var diffString:String = "-hard";
+
 	public var curSelectedSongHaveFunkyDiff:Bool = false;
 
 	public var bg:Sprite;
@@ -275,8 +279,8 @@ class FreeplayState extends MusicBeatState
 
 			PlayState.SONG = Song.loadFromJson(poop, poop2);
 			#if desktop
-			if(FileSystem.exists(Paths.json(poop2 + "/" + poop2 + (curDifficulty != 3 ? "-events" : "-funky-events"))))
-				PlayState.EVENTS = EventSystemChart.loadFromJson(poop2 + (curDifficulty != 3 ? "-events" : "-funky-events"), poop2);
+			if(FileSystem.exists(Paths.json(poop2 + "/" + poop2 + "-events")))
+				PlayState.EVENTS = EventSystemChart.loadFromJson(poop2 + "-events", poop2);
 			else
 			{
 				PlayState.EVENTS = 
@@ -285,8 +289,8 @@ class FreeplayState extends MusicBeatState
 				};
 			}
 			#else
-			if(Assets.exists(Paths.json(poop2 + "/" + poop2 + (curDifficulty != 3 ? "-events" : "-funky-events"))))
-				PlayState.EVENTS = EventSystemChart.loadFromJson(poop2 + (curDifficulty != 3 ? "-events" : "-funky-events"), poop2);
+			if(Assets.exists(Paths.json(poop2 + "/" + poop2 + "-events")))
+				PlayState.EVENTS = EventSystemChart.loadFromJson(poop2 + "-events", poop2);
 			else
 			{
 				PlayState.EVENTS = 
@@ -311,32 +315,41 @@ class FreeplayState extends MusicBeatState
 	{
 		curDifficulty += change;
 
-		var maxDiff = 3;
-		if(curSelectedSongHaveFunkyDiff)
-			maxDiff = 4;
+		maxDiff = 6;
 
 		if (curDifficulty < 0)
 			curDifficulty = maxDiff - 1;
 		if (curDifficulty > maxDiff - 1)
 			curDifficulty = 0;
 
+
 		#if !switch
 		intendedScore = Highscore.getScore(songs[curSelected].songName, curDifficulty);
 		intendedMaxAcc = Highscore.getAcc(songs[curSelected].songName, curDifficulty);
 		intendedCombo = Highscore.getCombo(songs[curSelected].songName, curDifficulty);
 		#end
-
+	
 		switch (curDifficulty)
 		{
 			case 0:
 				diffText.text = "< EASY >";
+				diffString = "-easy";
 			case 1:
 				diffText.text = '< NORMAL >';
+				diffString = "";
 			case 2:
 				diffText.text = "< HARD >";
+				diffString = "-hard";
 			case 3:
-				diffText.text = "< FUNKY >";
-		}
+				diffText.text = "< HARD + >";
+				diffString = "-hardplus";
+			case 4:
+				diffText.text = "< HARD ++ >";
+				diffString = "-hardplusplus";
+			case 5:
+				diffText.text = "< TRADITIONAL >";
+				diffString = "-trad";
+			}
 	}
 
 
@@ -394,10 +407,7 @@ class FreeplayState extends MusicBeatState
 				// item.setGraphicSize(Std.int(item.width));
 			}
 		}
-		curSelectedSongHaveFunkyDiff = 
-		Assets.exists(Paths.json(songs[curSelected].songName.toLowerCase() + "/" + songs[curSelected].songName.toLowerCase() + "-funky"))
-		 && 
-		Assets.exists(Paths.instFunky(songs[curSelected].songName.toLowerCase()));
+		curSelectedSongHaveFunkyDiff = Assets.exists(Paths.json(songs[curSelected].songName.toLowerCase() + "/" + songs[curSelected].songName.toLowerCase() + "-easy"));
 		changeDiff(0);
 	}
 }

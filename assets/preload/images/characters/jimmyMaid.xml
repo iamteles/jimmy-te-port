@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Maid Jimmy.png">
+	<!-- Created with Adobe Animate version 22.0.6.202 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Maid Down0000" x="0" y="0" width="652" height="572" pivotX="-104" pivotY="-214" frameX="0" frameY="-21" frameWidth="652" frameHeight="593"/>
+	<SubTexture name="Maid Down0001" x="0" y="0" width="652" height="572" frameX="0" frameY="-21" frameWidth="652" frameHeight="593"/>
+	<SubTexture name="Maid Down0002" x="652" y="0" width="620" height="593" frameX="-16" frameY="0" frameWidth="652" frameHeight="593"/>
+	<SubTexture name="Maid Down0003" x="652" y="0" width="620" height="593" frameX="-16" frameY="0" frameWidth="652" frameHeight="593"/>
+	<SubTexture name="Maid Down0004" x="652" y="0" width="620" height="593" frameX="-16" frameY="0" frameWidth="652" frameHeight="593"/>
+	<SubTexture name="Maid Down0005" x="652" y="0" width="620" height="593" frameX="-16" frameY="0" frameWidth="652" frameHeight="593"/>
+	<SubTexture name="Maid Down0006" x="652" y="0" width="620" height="593" frameX="-16" frameY="0" frameWidth="652" frameHeight="593"/>
+	<SubTexture name="Maid Down0007" x="652" y="0" width="620" height="593" frameX="-16" frameY="0" frameWidth="652" frameHeight="593"/>
+	<SubTexture name="Maid Down0008" x="652" y="0" width="620" height="593" frameX="-16" frameY="0" frameWidth="652" frameHeight="593"/>
+	<SubTexture name="Maid Down0009" x="652" y="0" width="620" height="593" frameX="-16" frameY="0" frameWidth="652" frameHeight="593"/>
+	<SubTexture name="Maid Down0010" x="652" y="0" width="620" height="593" frameX="-16" frameY="0" frameWidth="652" frameHeight="593"/>
+	<SubTexture name="Maid Down0011" x="652" y="0" width="620" height="593" frameX="-16" frameY="0" frameWidth="652" frameHeight="593"/>
+	<SubTexture name="Maid Down0012" x="652" y="0" width="620" height="593" frameX="-16" frameY="0" frameWidth="652" frameHeight="593"/>
+	<SubTexture name="Maid Down0013" x="652" y="0" width="620" height="593" frameX="-16" frameY="0" frameWidth="652" frameHeight="593"/>
+	<SubTexture name="Maid Down0014" x="652" y="0" width="620" height="593" frameX="-16" frameY="0" frameWidth="652" frameHeight="593"/>
+	<SubTexture name="Maid Idle0000" x="1272" y="0" width="567" height="775" pivotX="-288.25" pivotY="0" frameX="0" frameY="-31" frameWidth="576" frameHeight="806"/>
+	<SubTexture name="Maid Idle0001" x="1272" y="0" width="567" height="775" frameX="0" frameY="-31" frameWidth="576" frameHeight="806"/>
+	<SubTexture name="Maid Idle0002" x="1839" y="0" width="570" height="772" frameX="-6" frameY="-34" frameWidth="576" frameHeight="806"/>
+	<SubTexture name="Maid Idle0003" x="1839" y="0" width="570" height="772" frameX="-6" frameY="-34" frameWidth="576" frameHeight="806"/>
+	<SubTexture name="Maid Idle0004" x="2409" y="0" width="567" height="789" frameX="-9" frameY="-17" frameWidth="576" frameHeight="806"/>
+	<SubTexture name="Maid Idle0005" x="2409" y="0" width="567" height="789" frameX="-9" frameY="-17" frameWidth="576" frameHeight="806"/>
+	<SubTexture name="Maid Idle0006" x="2976" y="0" width="547" height="798" frameX="-12" frameY="-8" frameWidth="576" frameHeight="806"/>
+	<SubTexture name="Maid Idle0007" x="2976" y="0" width="547" height="798" frameX="-12" frameY="-8" frameWidth="576" frameHeight="806"/>
+	<SubTexture name="Maid Idle0008" x="3523" y="0" width="538" height="805" frameX="-13" frameY="-1" frameWidth="576" frameHeight="806"/>
+	<SubTexture name="Maid Idle0009" x="3523" y="0" width="538" height="805" frameX="-13" frameY="-1" frameWidth="576" frameHeight="806"/>
+	<SubTexture name="Maid Idle0010" x="0" y="805" width="534" height="806" frameX="-13" frameY="0" frameWidth="576" frameHeight="806"/>
+	<SubTexture name="Maid Idle0011" x="0" y="805" width="534" height="806" frameX="-13" frameY="0" frameWidth="576" frameHeight="806"/>
+	<SubTexture name="Maid Idle0012" x="534" y="805" width="532" height="806" frameX="-13" frameY="0" frameWidth="576" frameHeight="806"/>
+	<SubTexture name="Maid Idle0013" x="534" y="805" width="532" height="806" frameX="-13" frameY="0" frameWidth="576" frameHeight="806"/>
+	<SubTexture name="Maid Idle0014" x="534" y="805" width="532" height="806" frameX="-13" frameY="0" frameWidth="576" frameHeight="806"/>
+	<SubTexture name="Maid Left0000" x="1066" y="805" width="753" height="846" pivotX="-127.45" pivotY="40.65" frameX="0" frameY="0" frameWidth="801" frameHeight="846"/>
+	<SubTexture name="Maid Left0001" x="1819" y="805" width="753" height="846" frameX="0" frameY="0" frameWidth="801" frameHeight="846"/>
+	<SubTexture name="Maid Left0002" x="2572" y="805" width="753" height="846" frameX="-36" frameY="0" frameWidth="801" frameHeight="846"/>
+	<SubTexture name="Maid Left0003" x="3325" y="805" width="765" height="846" frameX="-36" frameY="0" frameWidth="801" frameHeight="846"/>
+	<SubTexture name="Maid Left0004" x="2572" y="805" width="753" height="846" frameX="-36" frameY="0" frameWidth="801" frameHeight="846"/>
+	<SubTexture name="Maid Left0005" x="3325" y="805" width="765" height="846" frameX="-36" frameY="0" frameWidth="801" frameHeight="846"/>
+	<SubTexture name="Maid Left0006" x="2572" y="805" width="753" height="846" frameX="-36" frameY="0" frameWidth="801" frameHeight="846"/>
+	<SubTexture name="Maid Left0007" x="3325" y="805" width="765" height="846" frameX="-36" frameY="0" frameWidth="801" frameHeight="846"/>
+	<SubTexture name="Maid Left0008" x="2572" y="805" width="753" height="846" frameX="-36" frameY="0" frameWidth="801" frameHeight="846"/>
+	<SubTexture name="Maid Left0009" x="3325" y="805" width="765" height="846" frameX="-36" frameY="0" frameWidth="801" frameHeight="846"/>
+	<SubTexture name="Maid Left0010" x="2572" y="805" width="753" height="846" frameX="-36" frameY="0" frameWidth="801" frameHeight="846"/>
+	<SubTexture name="Maid Left0011" x="3325" y="805" width="765" height="846" frameX="-36" frameY="0" frameWidth="801" frameHeight="846"/>
+	<SubTexture name="Maid Left0012" x="2572" y="805" width="753" height="846" frameX="-36" frameY="0" frameWidth="801" frameHeight="846"/>
+	<SubTexture name="Maid Left0013" x="3325" y="805" width="765" height="846" frameX="-36" frameY="0" frameWidth="801" frameHeight="846"/>
+	<SubTexture name="Maid Left0014" x="2572" y="805" width="753" height="846" frameX="-36" frameY="0" frameWidth="801" frameHeight="846"/>
+	<SubTexture name="Maid Left0015" x="3325" y="805" width="765" height="846" frameX="-36" frameY="0" frameWidth="801" frameHeight="846"/>
+	<SubTexture name="Maid Right0000" x="0" y="1651" width="651" height="806" pivotX="-345.35" pivotY="0" frameX="-1" frameY="0" frameWidth="652" frameHeight="806"/>
+	<SubTexture name="Maid Right0001" x="0" y="1651" width="651" height="806" frameX="-1" frameY="0" frameWidth="652" frameHeight="806"/>
+	<SubTexture name="Maid Right0002" x="651" y="1651" width="619" height="806" frameX="0" frameY="0" frameWidth="652" frameHeight="806"/>
+	<SubTexture name="Maid Right0003" x="651" y="1651" width="619" height="806" frameX="0" frameY="0" frameWidth="652" frameHeight="806"/>
+	<SubTexture name="Maid Right0004" x="651" y="1651" width="619" height="806" frameX="0" frameY="0" frameWidth="652" frameHeight="806"/>
+	<SubTexture name="Maid Right0005" x="651" y="1651" width="619" height="806" frameX="0" frameY="0" frameWidth="652" frameHeight="806"/>
+	<SubTexture name="Maid Right0006" x="651" y="1651" width="619" height="806" frameX="0" frameY="0" frameWidth="652" frameHeight="806"/>
+	<SubTexture name="Maid Right0007" x="651" y="1651" width="619" height="806" frameX="0" frameY="0" frameWidth="652" frameHeight="806"/>
+	<SubTexture name="Maid Right0008" x="651" y="1651" width="619" height="806" frameX="0" frameY="0" frameWidth="652" frameHeight="806"/>
+	<SubTexture name="Maid Right0009" x="651" y="1651" width="619" height="806" frameX="0" frameY="0" frameWidth="652" frameHeight="806"/>
+	<SubTexture name="Maid Right0010" x="651" y="1651" width="619" height="806" frameX="0" frameY="0" frameWidth="652" frameHeight="806"/>
+	<SubTexture name="Maid Right0011" x="651" y="1651" width="619" height="806" frameX="0" frameY="0" frameWidth="652" frameHeight="806"/>
+	<SubTexture name="Maid Right0012" x="651" y="1651" width="619" height="806" frameX="0" frameY="0" frameWidth="652" frameHeight="806"/>
+	<SubTexture name="Maid Right0013" x="651" y="1651" width="619" height="806" frameX="0" frameY="0" frameWidth="652" frameHeight="806"/>
+	<SubTexture name="Maid Right0014" x="651" y="1651" width="619" height="806" frameX="0" frameY="0" frameWidth="652" frameHeight="806"/>
+	<SubTexture name="Maid Up0000" x="1270" y="1651" width="559" height="913" pivotX="-207.15" pivotY="109.9" frameX="-3" frameY="0" frameWidth="562" frameHeight="913"/>
+	<SubTexture name="Maid Up0001" x="1270" y="1651" width="559" height="913" frameX="-3" frameY="0" frameWidth="562" frameHeight="913"/>
+	<SubTexture name="Maid Up0002" x="1829" y="1651" width="560" height="885" frameX="0" frameY="-28" frameWidth="562" frameHeight="913"/>
+	<SubTexture name="Maid Up0003" x="1829" y="1651" width="560" height="885" frameX="0" frameY="-28" frameWidth="562" frameHeight="913"/>
+	<SubTexture name="Maid Up0004" x="1829" y="1651" width="560" height="885" frameX="0" frameY="-28" frameWidth="562" frameHeight="913"/>
+	<SubTexture name="Maid Up0005" x="1829" y="1651" width="560" height="885" frameX="0" frameY="-28" frameWidth="562" frameHeight="913"/>
+	<SubTexture name="Maid Up0006" x="1829" y="1651" width="560" height="885" frameX="0" frameY="-28" frameWidth="562" frameHeight="913"/>
+	<SubTexture name="Maid Up0007" x="1829" y="1651" width="560" height="885" frameX="0" frameY="-28" frameWidth="562" frameHeight="913"/>
+	<SubTexture name="Maid Up0008" x="1829" y="1651" width="560" height="885" frameX="0" frameY="-28" frameWidth="562" frameHeight="913"/>
+	<SubTexture name="Maid Up0009" x="1829" y="1651" width="560" height="885" frameX="0" frameY="-28" frameWidth="562" frameHeight="913"/>
+	<SubTexture name="Maid Up0010" x="1829" y="1651" width="560" height="885" frameX="0" frameY="-28" frameWidth="562" frameHeight="913"/>
+	<SubTexture name="Maid Up0011" x="1829" y="1651" width="560" height="885" frameX="0" frameY="-28" frameWidth="562" frameHeight="913"/>
+	<SubTexture name="Maid Up0012" x="1829" y="1651" width="560" height="885" frameX="0" frameY="-28" frameWidth="562" frameHeight="913"/>
+	<SubTexture name="Maid Up0013" x="1829" y="1651" width="560" height="885" frameX="0" frameY="-28" frameWidth="562" frameHeight="913"/>
+	<SubTexture name="Maid Up0014" x="1829" y="1651" width="560" height="885" frameX="0" frameY="-28" frameWidth="562" frameHeight="913"/>
+</TextureAtlas>

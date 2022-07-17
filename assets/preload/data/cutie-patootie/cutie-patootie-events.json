@@ -1,0 +1,754 @@
+{
+	"song": {
+		"notes": [
+			{
+				"sectionNotes": [
+					[
+						0,
+						0,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					],
+					[
+						0,
+						1,
+						"changeCameraBeat",
+						[
+							1,
+							2,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						13714.2857142857,
+						0,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						27428.5714285714,
+						0,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					],
+					[
+						27428.5714285714,
+						1,
+						"changeCameraBeat",
+						[
+							1,
+							1,
+							0
+						]
+					],
+					[
+						27428.5714285714,
+						2,
+						"rotateCam",
+						[
+							15,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": [
+					[
+						30428.5714285714,
+						2,
+						"rotateCam",
+						[
+							-15,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": [
+					[
+						30857.1428571429,
+						0,
+						"rotateCam",
+						[
+							15,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": [
+					[
+						33857.1428571428,
+						2,
+						"rotateCam",
+						[
+							15,
+							0,
+							0
+						]
+					],
+					[
+						34071.4285714286,
+						2,
+						"rotateCam",
+						[
+							15,
+							0,
+							0
+						]
+					],
+					[
+						33964.2857142857,
+						3,
+						"rotateCam",
+						[
+							-15,
+							0,
+							0
+						]
+					],
+					[
+						34178.5714285714,
+						3,
+						"rotateCam",
+						[
+							-15,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": [
+					[
+						34285.7142857143,
+						0,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					],
+					[
+						34285.7142857143,
+						2,
+						"rotateCam",
+						[
+							15,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": [
+					[
+						37285.7142857143,
+						2,
+						"rotateCam",
+						[
+							-15,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": [
+					[
+						37714.2857142857,
+						0,
+						"rotateCam",
+						[
+							15,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						41142.8571428572,
+						0,
+						"playBFAnim",
+						[
+							"hey",
+							0,
+							0
+						]
+					],
+					[
+						41142.8571428572,
+						1,
+						"changeCameraBeat",
+						[
+							1,
+							2,
+							0
+						]
+					],
+					[
+						41142.8571428572,
+						2,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						54857.1428571429,
+						0,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					],
+					[
+						54857.1428571429,
+						1,
+						"changeCameraBeat",
+						[
+							1,
+							1,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						68571.4285714286,
+						0,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					],
+					[
+						68571.4285714286,
+						2,
+						"rotateCam",
+						[
+							15,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": [
+					[
+						71571.4285714286,
+						2,
+						"rotateCam",
+						[
+							-15,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": [
+					[
+						72000,
+						0,
+						"rotateCam",
+						[
+							15,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": [
+					[
+						75000,
+						3,
+						"rotateCam",
+						[
+							15,
+							0,
+							0
+						]
+					],
+					[
+						75214.2857142858,
+						3,
+						"rotateCam",
+						[
+							15,
+							0,
+							0
+						]
+					],
+					[
+						75107.1428571429,
+						2,
+						"rotateCam",
+						[
+							-15,
+							0,
+							0
+						]
+					],
+					[
+						75321.4285714286,
+						2,
+						"rotateCam",
+						[
+							-15,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": [
+					[
+						75428.5714285715,
+						0,
+						"rotateCam",
+						[
+							15,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": [
+					[
+						78428.5714285715,
+						2,
+						"rotateCam",
+						[
+							-15,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": [
+					[
+						78857.1428571429,
+						0,
+						"rotateCam",
+						[
+							15,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						82285.7142857143,
+						0,
+						"rotateCam",
+						[
+							15,
+							0,
+							0
+						]
+					],
+					[
+						82285.7142857143,
+						1,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": [
+					[
+						85285.7142857143,
+						2,
+						"rotateCam",
+						[
+							-15,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": [
+					[
+						85714.2857142857,
+						0,
+						"rotateCam",
+						[
+							15,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": [
+					[
+						88714.2857142857,
+						2,
+						"rotateCam",
+						[
+							15,
+							0,
+							0
+						]
+					],
+					[
+						88928.5714285714,
+						2,
+						"rotateCam",
+						[
+							15,
+							0,
+							0
+						]
+					],
+					[
+						88821.4285714286,
+						2,
+						"rotateCam",
+						[
+							-15,
+							0,
+							0
+						]
+					],
+					[
+						89035.7142857143,
+						3,
+						"rotateCam",
+						[
+							-15,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": [
+					[
+						89142.8571428571,
+						0,
+						"rotateCam",
+						[
+							15,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": [
+					[
+						92142.8571428571,
+						2,
+						"rotateCam",
+						[
+							-15,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": [
+					[
+						92571.4285714286,
+						0,
+						"rotateCam",
+						[
+							15,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						96000,
+						0,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					],
+					[
+						96000,
+						1,
+						"changeCameraBeat",
+						[
+							1,
+							4,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						109714.285714286,
+						0,
+						"pointAtGF",
+						[
+							"ENABLE",
+							0,
+							0
+						]
+					],
+					[
+						110785.714285714,
+						0,
+						"pointAtGF",
+						[
+							"DISABLE",
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": [
+					[
+						111428.571428571,
+						0,
+						"pointAtGF",
+						[
+							"ENABLE",
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": [
+					[
+						113142.857142857,
+						0,
+						"pointAtGF",
+						[
+							"DISABLE",
+							0,
+							0
+						]
+					],
+					[
+						114321.428571429,
+						0,
+						"pointAtGF",
+						[
+							"ENABLE",
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			}
+		]
+	}
+}

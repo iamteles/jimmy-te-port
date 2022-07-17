@@ -22,6 +22,8 @@ class Character extends Sprite
 
 	public var healthBarColor:FlxColor = FlxColor.GRAY;
 
+	public var animState:String = "";
+
 	public function new(x:Float, y:Float, ?character:String = "bf", ?isPlayer:Bool = false)
 	{
 		super(x, y);
@@ -47,10 +49,10 @@ class Character extends Sprite
 				animation.addByIndices('sad', 'gf sad', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], "", 24, false);
 				animation.addByIndices('danceLeft', 'GF Dancing Beat', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
 				animation.addByIndices('danceRight', 'GF Dancing Beat', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
-				animation.addByIndices('danceLeftH', 'GF Dancing Beat', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
-				animation.addByIndices('danceRightH', 'GF Dancing Beat', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
-				animation.addByIndices('danceLeftS', 'GF Dancing Beat', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
-				animation.addByIndices('danceRightS', 'GF Dancing Beat', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
+				animation.addByIndices('danceLeftH', 'GF Dancing Beat happy0', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
+				animation.addByIndices('danceRightH', 'GF Dancing Beat happy0', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
+				animation.addByIndices('danceLeftS', 'GF Dancing Beat sad0', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
+				animation.addByIndices('danceRightS', 'GF Dancing Beat sad0', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
 				animation.addByIndices('hairBlow', "GF Dancing Beat Hair blowing", [0, 1, 2, 3], "", 24);
 				animation.addByIndices('hairFall', "GF Dancing Beat Hair Landing", [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], "", 24, false);
 				animation.addByPrefix('scared', 'GF FEAR', 24);
@@ -102,23 +104,181 @@ class Character extends Sprite
 
 				playAnim('idle');
 
-			case 'bryce':
-				// DAD ANIMATION LOADING CODE
+			case 'jimmyPLAYER':
+				// jimby
 				tex = Paths.getSparrowAtlas('characters/Jimmy_ASSets');
 				frames = tex;
 				animation.addByPrefix('idle', 'jimmyidle0', 24, false);
 				animation.addByPrefix('singUP', 'jimmyup0', 24, false);
-				animation.addByPrefix('singRIGHT', 'jimmy right0', 24, false);
+				animation.addByPrefix('singRIGHT', 'jimmyleft0', 24, false);
 				animation.addByPrefix('singDOWN', 'jimmy down0', 24, false);
-				animation.addByPrefix('singLEFT', 'jimmyleft0', 24, false);
+				animation.addByPrefix('singLEFT', 'jimmy right0', 24, false);
 				healthBarColor.setRGB(255, 79, 79, 255);
 				loadOffsetFile(curCharacter);
 
 				playAnim('idle');
-		
-	
-	
 
+			case 'ylyl':
+				// jimby
+				tex = Paths.getSparrowAtlas('characters/jimby if he real');
+				frames = tex;
+				animation.addByPrefix('idle', 'jimmy idle0', 24, false);
+				animation.addByPrefix('singUP', 'jimmy up note0', 24, false);
+				animation.addByPrefix('singRIGHT', 'jimmy right note0', 24, false);
+				animation.addByPrefix('singDOWN', 'jimmy down note0', 24, false);
+				animation.addByPrefix('singLEFT', 'jimmy left note0', 24, false);
+				healthBarColor.setRGB(148, 47, 255, 255);
+				loadOffsetFile(curCharacter);
+
+				playAnim('idle');
+
+			case 'jeffgone':
+				// jif
+				tex = Paths.getSparrowAtlas('characters/Jeffry Gone');
+				frames = tex;
+				animation.addByPrefix('idle', 'Jeffry Idle', 24, false);
+				animation.addByPrefix('singUP', 'Jeffry Up', 24, false);
+				animation.addByPrefix('singRIGHT', 'Jeffry Right', 24, false);
+				animation.addByPrefix('singDOWN', 'Jeffry Down0', 24, false);
+				animation.addByPrefix('singLEFT', 'Jeffry Left', 24, false);
+				animation.addByPrefix('scared', 'Jeffry Laugh', 24, false);
+				healthBarColor.setRGB(255, 255, 255, 255);
+				loadOffsetFile(curCharacter);
+
+				playAnim('idle');
+
+			case 'bryce':
+				tex = Paths.getSparrowAtlas('characters/Bryce_assets');
+				frames = tex;
+				animation.addByPrefix('idle', 'BRYCE IDLE', 24, false);
+				animation.addByPrefix('singUP', 'BRYCE north', 24, false);
+				animation.addByPrefix('singRIGHT', 'BRYCE right0', 24, false);
+				animation.addByPrefix('singDOWN', 'BRYCE down0', 24, false);
+				animation.addByPrefix('singLEFT', 'BRYCE Left0', 24, false);
+				healthBarColor.setRGB(0, 97, 255, 255);
+				loadOffsetFile(curCharacter);
+
+				playAnim('idle');
+
+			case 'maid':
+				tex = Paths.getSparrowAtlas('characters/jimmyMaid');
+				frames = tex;
+				animation.addByPrefix('idle', 'Maid Idle', 24, false);
+				animation.addByPrefix('singUP', 'Maid Up', 24, false);
+				animation.addByPrefix('singRIGHT', 'Maid Right', 24, false);
+				animation.addByPrefix('singDOWN', 'Maid Down', 24, false);
+				animation.addByPrefix('singLEFT', 'Maid Left', 24, false);
+				healthBarColor.setRGB(255, 133, 133, 255);
+				loadOffsetFile(curCharacter);
+
+				playAnim('idle');
+			case 'blaze':
+				tex = Paths.getSparrowAtlas('characters/Blaze');
+				frames = tex;
+				animation.addByPrefix('idle', 'Blaze Idle', 24, false);
+				animation.addByPrefix('singUP', 'Blaze Up', 24, false);
+				animation.addByPrefix('singRIGHT', 'Blaze Right', 24, false);
+				animation.addByPrefix('singDOWN', 'Blaze Down', 24, false);
+				animation.addByPrefix('singLEFT', 'Blaze Left', 24, false);
+				healthBarColor.setRGB(255, 255, 255, 255);
+				loadOffsetFile(curCharacter);
+
+				playAnim('idle');
+
+			case 'chara':
+				tex = Paths.getSparrowAtlas('characters/Chara');
+				frames = tex;
+				animation.addByPrefix('idle', 'Chara Idle', 24, false);
+				animation.addByPrefix('singUP', 'Chara Up', 24, false);
+				animation.addByPrefix('singRIGHT', 'Chara Right', 24, false);
+				animation.addByPrefix('singDOWN', 'Chara Down', 24, false);
+				animation.addByPrefix('singLEFT', 'Chara Left', 24, false);
+				healthBarColor.setRGB(180, 255, 255, 255);
+				loadOffsetFile(curCharacter);
+
+				playAnim('idle');
+
+			case 'corruption':
+				tex = Paths.getSparrowAtlas('characters/Corruption');
+				frames = tex;
+				animation.addByPrefix('idle', 'Corruption Idle', 24, false);
+				animation.addByPrefix('singUP', 'Corruption Up', 24, false);
+				animation.addByPrefix('singRIGHT', 'Corruption Right', 24, false);
+				animation.addByPrefix('singDOWN', 'Corruption Down', 24, false);
+				animation.addByPrefix('singLEFT', 'Corruption Left', 24, false);
+				healthBarColor.setRGB(255, 255, 255, 255);
+				loadOffsetFile(curCharacter);
+
+				playAnim('idle');
+
+			case 'crunchy':
+				tex = Paths.getSparrowAtlas('characters/Crunchy');
+				frames = tex;
+				animation.addByPrefix('idle', 'Teater Idle', 24, false);
+				animation.addByPrefix('singUP', 'Teater Up', 24, false);
+				animation.addByPrefix('singRIGHT', 'Teater Right', 24, false);
+				animation.addByPrefix('singDOWN', 'Teater Down', 24, false);
+				animation.addByPrefix('singLEFT', 'Teater Left', 24, false);
+				healthBarColor.setRGB(255, 255, 255, 255);
+				loadOffsetFile(curCharacter);
+
+				playAnim('idle');
+
+			case 'parallax':
+				tex = Paths.getSparrowAtlas('characters/Parallax');
+				frames = tex;
+				animation.addByPrefix('idle', 'Parallax Idle', 24, false);
+				animation.addByPrefix('singUP', 'Parallax Up', 24, false);
+				animation.addByPrefix('singRIGHT', 'Parallax Right', 24, false);
+				animation.addByPrefix('singDOWN', 'Parallax Down', 24, false);
+				animation.addByPrefix('singLEFT', 'Parallax Left', 24, false);
+				healthBarColor.setRGB(255, 255, 255, 255);
+				loadOffsetFile(curCharacter);
+
+				playAnim('idle');
+
+			case 'mysterymonkey':
+				tex = Paths.getSparrowAtlas('characters/mystery_monkey');
+				frames = tex;
+				animation.addByPrefix('idle', 'Its Too Late0', 24, false);
+				animation.addByPrefix('singUP', 'UpSingPose', 24, false);
+				animation.addByPrefix('singRIGHT', 'RightSingPose', 24, false);
+				animation.addByPrefix('singDOWN', 'DownSingPose', 24, false);
+				animation.addByPrefix('singLEFT', 'LeftSingPose', 24, false);
+				animation.addByPrefix('singUPalt', 'AltUpSing', 24, false);
+				animation.addByPrefix('singRIGHTalt', 'AltRightSing', 24, false);
+				animation.addByPrefix('singDOWNalt', 'ALTDownsing', 24, false);
+				animation.addByPrefix('singLEFTalt', 'AltLeftSing', 24, false);
+				healthBarColor.setRGB(255, 133, 133, 255);
+				loadOffsetFile('mm');
+
+				playAnim('idle');
+
+			case 'chickfila':
+				tex = Paths.getSparrowAtlas('characters/bfChickFilA');
+				frames = tex;
+				animation.addByPrefix('idle', 'Suit BF Idle', 24, false);
+				animation.addByPrefix('singUP', 'Suit BF Up', 24, false);
+				animation.addByPrefix('singRIGHT', 'Suit BF Right', 24, false);
+				animation.addByPrefix('singDOWN', 'Suit BF Down', 24, false);
+				animation.addByPrefix('singLEFT', 'Suit BF Left', 24, false);
+				healthBarColor.setRGB(49, 176, 209, 255);
+
+				//flipX = true;
+				
+				loadOffsetFile(curCharacter);
+
+				playAnim('idle');
+
+			case 'gfMaid':
+				tex = Paths.getSparrowAtlas('characters/gfMaid');
+				frames = tex;
+				animation.addByIndices('danceLeft', 'Maid GF Dancing Beat', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
+				animation.addByIndices('danceRight', 'Maid GF Dancing Beat', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
+				healthBarColor.setRGB(165, 0, 77, 255);
+				loadOffsetFile(curCharacter);
+				playAnim('danceRight');
+				
 			case 'pico':
 				tex = Paths.getSparrowAtlas('characters/Pico_FNF_assetss');
 				frames = tex;
@@ -146,71 +306,73 @@ class Character extends Sprite
 				frames = tex;
 				animation.addByPrefix('idle', 'BF idle dance', 24, false);
 				animation.addByPrefix('singUP', 'BF NOTE UP0', 24, false);
-				animation.addByPrefix('singLEFT', 'BF NOTE LEFT0', 24, false);
-				animation.addByPrefix('singRIGHT', 'BF NOTE RIGHT0', 24, false);
 				animation.addByPrefix('singDOWN', 'BF NOTE DOWN0', 24, false);
 				animation.addByPrefix('singUPmiss', 'BF NOTE UP MISS', 24, false);
-				animation.addByPrefix('singLEFTmiss', 'BF NOTE LEFT MISS', 24, false);
-				animation.addByPrefix('singRIGHTmiss', 'BF NOTE RIGHT MISS', 24, false);
 				animation.addByPrefix('singDOWNmiss', 'BF NOTE DOWN MISS', 24, false);
 				animation.addByPrefix('hey', 'BF HEY', 24, false);
 				animation.addByPrefix('spinMic', 'BF MIC SPIN', 24, false);
-				
+				animation.addByPrefix('scared', 'BF idle shaking', 24);
 				animation.addByPrefix('firstDeath', "BF dies", 24, false);
 				animation.addByPrefix('deathLoop', "BF Dead Loop", 24, true);
 				animation.addByPrefix('deathConfirm', "BF Dead confirm", 24, false);
+				animation.addByPrefix('singLEFT', 'BF NOTE LEFT0', 24, false);
+				animation.addByPrefix('singRIGHT', 'BF NOTE RIGHT0', 24, false);
+				animation.addByPrefix('singLEFTmiss', 'BF NOTE LEFT MISS', 24, false);
+				animation.addByPrefix('singRIGHTmiss', 'BF NOTE RIGHT MISS', 24, false);
+				loadOffsetFile(curCharacter);
 
+				healthBarColor.setRGB(49, 176, 209, 255);
+	
+
+				playAnim('idle');
+
+				flipX = true;
+			case 'jeffry-bf':
+				var tex = Paths.getSparrowAtlas('characters/Jeffry_BF');
+				frames = tex;
+				animation.addByPrefix('idle', 'GoneSlayerBF idle0', 24, false);
+				animation.addByPrefix('singUP', 'GoneSlayerBF up0', 24, false);
+				animation.addByPrefix('singDOWN', 'GoneSlayerBF down0', 24, false);
+				animation.addByPrefix('singUPmiss', 'GoneSlayerBF missup0', 24, false);
+				animation.addByPrefix('singDOWNmiss', 'GoneSlayerBF missdown0', 24, false);
+				animation.addByPrefix('singLEFT', 'GoneSlayerBF left0', 24, false);
+				animation.addByPrefix('singRIGHT', 'GoneSlayerBF right0', 24, false);
+				animation.addByPrefix('singLEFTmiss', 'GoneSlayerBF missleft0', 24, false);
+				animation.addByPrefix('singRIGHTmiss', 'GoneSlayerBF missright0', 24, false);
+				loadOffsetFile(curCharacter);
+
+				healthBarColor.setRGB(76, 129, 229, 255);
+	
+
+				playAnim('idle');
+
+				//flipX = true;
+			case 'bfF':
+				var tex = Paths.getSparrowAtlas('characters/BOYFRIEND');
+				frames = tex;
+				animation.addByPrefix('idle', 'BF idle dance', 24, false);
+				animation.addByPrefix('singUP', 'BF NOTE UP0', 24, false);
+				animation.addByPrefix('singDOWN', 'BF NOTE DOWN0', 24, false);
+				animation.addByPrefix('singUPmiss', 'BF NOTE UP MISS', 24, false);
+				animation.addByPrefix('singDOWNmiss', 'BF NOTE DOWN MISS', 24, false);
+				animation.addByPrefix('hey', 'BF HEY', 24, false);
+				animation.addByPrefix('spinMic', 'BF MIC SPIN', 24, false);
 				animation.addByPrefix('scared', 'BF idle shaking', 24);
-				healthBarColor.setRGB(49, 176, 209, 255);
+				animation.addByPrefix('firstDeath', "BF dies", 24, false);
+				animation.addByPrefix('deathLoop', "BF Dead Loop", 24, true);
+				animation.addByPrefix('deathConfirm', "BF Dead confirm", 24, false);
+				animation.addByPrefix('singLEFT', 'BF NOTE RIGHT0', 24, false);
+				animation.addByPrefix('singRIGHT', 'BF NOTE LEFT0', 24, false);
+				animation.addByPrefix('singLEFTmiss', 'BF NOTE RIGHT MISS', 24, false);
+				animation.addByPrefix('singRIGHTmiss', 'BF NOTE LEFT MISS', 24, false);
 				loadOffsetFile(curCharacter);
+
+				healthBarColor.setRGB(49, 176, 209, 255);
+	
 
 				playAnim('idle');
 
-				flipX = true;
-				loadOffsetFile(curCharacter);
-
-			case 'bf-pixel':
-				frames = Paths.getSparrowAtlas('characters/bfPixel');
-				animation.addByPrefix('idle', 'BF IDLE', 24, false);
-				animation.addByPrefix('singUP', 'BF UP NOTE', 24, false);
-				animation.addByPrefix('singLEFT', 'BF LEFT NOTE', 24, false);
-				animation.addByPrefix('singRIGHT', 'BF RIGHT NOTE', 24, false);
-				animation.addByPrefix('singDOWN', 'BF DOWN NOTE', 24, false);
-				animation.addByPrefix('singUPmiss', 'BF UP MISS', 24, false);
-				animation.addByPrefix('singLEFTmiss', 'BF LEFT MISS', 24, false);
-				animation.addByPrefix('singRIGHTmiss', 'BF RIGHT MISS', 24, false);
-				animation.addByPrefix('singDOWNmiss', 'BF DOWN MISS', 24, false);
-				animation.addByPrefix('spinMic', 'BF IDLE', 24, false);
-
-				loadOffsetFile(curCharacter);
-
-				setGraphicSize(Std.int(width * 6));
-				updateHitbox();
-
-				playAnim('idle');
-				healthBarColor.setRGB(49, 176, 209, 255);
-				width -= 100;
-				height -= 100;
-
-				antialiasing = false;
-
-				flipX = true;
-			case 'bf-pixel-dead':
-				frames = Paths.getSparrowAtlas('characters/bfPixelsDEAD');
-				animation.addByPrefix('singUP', "BF Dies pixel", 24, false);
-				animation.addByPrefix('firstDeath', "BF Dies pixel", 24, false);
-				animation.addByPrefix('deathLoop', "Retry Loop", 24, true);
-				animation.addByPrefix('deathConfirm', "RETRY CONFIRM", 24, false);
-				animation.play('firstDeath');
-
-				loadOffsetFile(curCharacter);
-				playAnim('firstDeath');
-				// pixel bullshit
-				setGraphicSize(Std.int(width * 6));
-				updateHitbox();
-				antialiasing = false;
-				flipX = true;
-
+				//flipX = true;
 
 		}
 
@@ -218,26 +380,34 @@ class Character extends Sprite
 
 		if (isPlayer)
 		{
-			flipX = !flipX;
-
-			// Doesn't flip for BF, since his are already in the right place???
-			if (!curCharacter.startsWith('bf'))
+			switch (curCharacter)
 			{
-				// var animArray
-				var oldRight = animation.getByName('singRIGHT').frames;
-				animation.getByName('singRIGHT').frames = animation.getByName('singLEFT').frames;
-				animation.getByName('singLEFT').frames = oldRight;
+				case "chickfila" | "jeffry-bf":
+					//do nothin
+				case "bf":
+					flipX = !flipX;
+				case "jimmyPLAYER":
+					flipX = !flipX;
+				default:
+				{	
+					flipX = !flipX;
+					// var animArray
+					var oldRight = animation.getByName('singRIGHT').frames;
+					animation.getByName('singRIGHT').frames = animation.getByName('singLEFT').frames;
+					animation.getByName('singLEFT').frames = oldRight;
 
 
 
-				// IF THEY HAVE MISS ANIMATIONS??
-				if (animation.getByName('singRIGHTmiss') != null)
-				{
-					var oldMiss = animation.getByName('singRIGHTmiss').frames;
-					animation.getByName('singRIGHTmiss').frames = animation.getByName('singLEFTmiss').frames;
-					animation.getByName('singLEFTmiss').frames = oldMiss;
+					// IF THEY HAVE MISS ANIMATIONS??
+					if (animation.getByName('singRIGHTmiss') != null)
+					{
+						var oldMiss = animation.getByName('singRIGHTmiss').frames;
+						animation.getByName('singRIGHTmiss').frames = animation.getByName('singLEFTmiss').frames;
+						animation.getByName('singLEFTmiss').frames = oldMiss;
+					}
 				}
 			}
+
 		}
 		else
 		{
@@ -263,7 +433,7 @@ class Character extends Sprite
 
 	function loadOffsetFile(a:String) 
 	{
-        var g:Array<String> = CoolUtil.coolTextFile(Paths.txtOffsets("characters/" + a + "Offsets"));
+        var g:Array<String> = CoolUtil.coolTextFile(Paths.txtOffsets("characters/offsets/" + a + "Offsets"));
         for (b in 0 ... g.length) 
         {
         	var c:String = g[b];
@@ -313,14 +483,13 @@ class Character extends Sprite
 					if (!animation.curAnim.name.startsWith('hair'))
 					{
 						danced = !danced;
-
 						if (danced)
-							playAnim('danceRight', true);
+							playAnim('danceRight' + animState, true);
 						else
-							playAnim('danceLeft', true);
+							playAnim('danceLeft' + animState, true);
 					}
 
-				case 'gf-christmas':
+				case 'gf-christmas' | 'gfMaid':
 					if (!animation.curAnim.name.startsWith('hair'))
 					{
 						danced = !danced;

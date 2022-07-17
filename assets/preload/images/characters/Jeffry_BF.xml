@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Jeffry_BF.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="GoneSlayerBF down0000" x="0" y="0" width="474" height="463" frameX="-3" frameY="-32" frameWidth="492" frameHeight="495"/>
+	<SubTexture name="GoneSlayerBF down0001" x="0" y="0" width="474" height="463" frameX="-3" frameY="-32" frameWidth="492" frameHeight="495"/>
+	<SubTexture name="GoneSlayerBF down0002" x="474" y="0" width="487" height="481" frameX="0" frameY="-14" frameWidth="492" frameHeight="495"/>
+	<SubTexture name="GoneSlayerBF down0003" x="474" y="0" width="487" height="481" frameX="0" frameY="-14" frameWidth="492" frameHeight="495"/>
+	<SubTexture name="GoneSlayerBF down0004" x="961" y="0" width="489" height="494" frameX="0" frameY="-1" frameWidth="492" frameHeight="495"/>
+	<SubTexture name="GoneSlayerBF down0005" x="961" y="0" width="489" height="494" frameX="0" frameY="-1" frameWidth="492" frameHeight="495"/>
+	<SubTexture name="GoneSlayerBF down0006" x="1450" y="0" width="492" height="495"/>
+	<SubTexture name="GoneSlayerBF down0007" x="1450" y="0" width="492" height="495"/>
+	<SubTexture name="GoneSlayerBF down0008" x="1450" y="0" width="492" height="495"/>
+	<SubTexture name="GoneSlayerBF down0009" x="1450" y="0" width="492" height="495"/>
+	<SubTexture name="GoneSlayerBF down0010" x="1450" y="0" width="492" height="495"/>
+	<SubTexture name="GoneSlayerBF down0011" x="1450" y="0" width="492" height="495"/>
+	<SubTexture name="GoneSlayerBF down0012" x="1450" y="0" width="492" height="495"/>
+	<SubTexture name="GoneSlayerBF down0013" x="1450" y="0" width="492" height="495"/>
+	<SubTexture name="GoneSlayerBF down0014" x="1450" y="0" width="492" height="495"/>
+	<SubTexture name="GoneSlayerBF idle0000" x="1942" y="0" width="461" height="520" frameX="0" frameY="-28" frameWidth="461" frameHeight="554"/>
+	<SubTexture name="GoneSlayerBF idle0001" x="1942" y="0" width="461" height="520" frameX="0" frameY="-28" frameWidth="461" frameHeight="554"/>
+	<SubTexture name="GoneSlayerBF idle0002" x="2403" y="0" width="424" height="531" frameX="-5" frameY="-23" frameWidth="461" frameHeight="554"/>
+	<SubTexture name="GoneSlayerBF idle0003" x="2403" y="0" width="424" height="531" frameX="-5" frameY="-23" frameWidth="461" frameHeight="554"/>
+	<SubTexture name="GoneSlayerBF idle0004" x="2827" y="0" width="399" height="531" frameX="-13" frameY="-15" frameWidth="461" frameHeight="554"/>
+	<SubTexture name="GoneSlayerBF idle0005" x="2827" y="0" width="399" height="531" frameX="-13" frameY="-15" frameWidth="461" frameHeight="554"/>
+	<SubTexture name="GoneSlayerBF idle0006" x="3226" y="0" width="423" height="538" frameX="-11" frameY="-7" frameWidth="461" frameHeight="554"/>
+	<SubTexture name="GoneSlayerBF idle0007" x="3226" y="0" width="423" height="538" frameX="-11" frameY="-7" frameWidth="461" frameHeight="554"/>
+	<SubTexture name="GoneSlayerBF idle0008" x="3649" y="0" width="432" height="544" frameX="-8" frameY="0" frameWidth="461" frameHeight="554"/>
+	<SubTexture name="GoneSlayerBF idle0009" x="3649" y="0" width="432" height="544" frameX="-8" frameY="0" frameWidth="461" frameHeight="554"/>
+	<SubTexture name="GoneSlayerBF idle0010" x="0" y="544" width="438" height="542" frameX="-7" frameY="0" frameWidth="461" frameHeight="554"/>
+	<SubTexture name="GoneSlayerBF idle0011" x="438" y="544" width="438" height="542" frameX="-7" frameY="0" frameWidth="461" frameHeight="554"/>
+	<SubTexture name="GoneSlayerBF idle0012" x="438" y="544" width="438" height="542" frameX="-7" frameY="0" frameWidth="461" frameHeight="554"/>
+	<SubTexture name="GoneSlayerBF idle0013" x="876" y="544" width="443" height="538" frameX="-6" frameY="-2" frameWidth="461" frameHeight="554"/>
+	<SubTexture name="GoneSlayerBF idle0014" x="876" y="544" width="443" height="538" frameX="-6" frameY="-2" frameWidth="461" frameHeight="554"/>
+	<SubTexture name="GoneSlayerBF left0000" x="1319" y="544" width="471" height="537" frameX="0" frameY="0" frameWidth="475" frameHeight="537"/>
+	<SubTexture name="GoneSlayerBF left0001" x="1319" y="544" width="471" height="537" frameX="0" frameY="0" frameWidth="475" frameHeight="537"/>
+	<SubTexture name="GoneSlayerBF left0002" x="1790" y="544" width="466" height="537" frameX="-9" frameY="0" frameWidth="475" frameHeight="537"/>
+	<SubTexture name="GoneSlayerBF left0003" x="1790" y="544" width="466" height="537" frameX="-9" frameY="0" frameWidth="475" frameHeight="537"/>
+	<SubTexture name="GoneSlayerBF left0004" x="2256" y="544" width="462" height="537" frameX="-13" frameY="0" frameWidth="475" frameHeight="537"/>
+	<SubTexture name="GoneSlayerBF left0005" x="2256" y="544" width="462" height="537" frameX="-13" frameY="0" frameWidth="475" frameHeight="537"/>
+	<SubTexture name="GoneSlayerBF left0006" x="2718" y="544" width="458" height="537" frameX="-14" frameY="0" frameWidth="475" frameHeight="537"/>
+	<SubTexture name="GoneSlayerBF left0007" x="2718" y="544" width="458" height="537" frameX="-14" frameY="0" frameWidth="475" frameHeight="537"/>
+	<SubTexture name="GoneSlayerBF left0008" x="2718" y="544" width="458" height="537" frameX="-14" frameY="0" frameWidth="475" frameHeight="537"/>
+	<SubTexture name="GoneSlayerBF left0009" x="2718" y="544" width="458" height="537" frameX="-14" frameY="0" frameWidth="475" frameHeight="537"/>
+	<SubTexture name="GoneSlayerBF left0010" x="2718" y="544" width="458" height="537" frameX="-14" frameY="0" frameWidth="475" frameHeight="537"/>
+	<SubTexture name="GoneSlayerBF left0011" x="2718" y="544" width="458" height="537" frameX="-14" frameY="0" frameWidth="475" frameHeight="537"/>
+	<SubTexture name="GoneSlayerBF left0012" x="2718" y="544" width="458" height="537" frameX="-14" frameY="0" frameWidth="475" frameHeight="537"/>
+	<SubTexture name="GoneSlayerBF left0013" x="2718" y="544" width="458" height="537" frameX="-14" frameY="0" frameWidth="475" frameHeight="537"/>
+	<SubTexture name="GoneSlayerBF left0014" x="2718" y="544" width="458" height="537" frameX="-14" frameY="0" frameWidth="475" frameHeight="537"/>
+	<SubTexture name="GoneSlayerBF missdown0000" x="0" y="0" width="474" height="463" frameX="-32" frameY="-39" frameWidth="492" frameHeight="495"/>
+	<SubTexture name="GoneSlayerBF missdown0001" x="0" y="0" width="474" height="463" frameX="-32" frameY="-39" frameWidth="492" frameHeight="495"/>
+	<SubTexture name="GoneSlayerBF missdown0002" x="3176" y="544" width="588" height="511" frameX="-3" frameY="0" frameWidth="594" frameHeight="511"/>
+	<SubTexture name="GoneSlayerBF missdown0003" x="3176" y="544" width="588" height="511" frameX="-3" frameY="0" frameWidth="594" frameHeight="511"/>
+	<SubTexture name="GoneSlayerBF missdown0004" x="0" y="1086" width="594" height="506" frameX="0" frameY="-5" frameWidth="594" frameHeight="511"/>
+	<SubTexture name="GoneSlayerBF missdown0005" x="0" y="1086" width="594" height="506" frameX="0" frameY="-5" frameWidth="594" frameHeight="511"/>
+	<SubTexture name="GoneSlayerBF missdown0006" x="0" y="1086" width="594" height="506" frameX="0" frameY="-5" frameWidth="594" frameHeight="511"/>
+	<SubTexture name="GoneSlayerBF missdown0007" x="0" y="1086" width="594" height="506" frameX="0" frameY="-5" frameWidth="594" frameHeight="511"/>
+	<SubTexture name="GoneSlayerBF missdown0008" x="0" y="1086" width="594" height="506" frameX="0" frameY="-5" frameWidth="594" frameHeight="511"/>
+	<SubTexture name="GoneSlayerBF missdown0009" x="0" y="1086" width="594" height="506" frameX="0" frameY="-5" frameWidth="594" frameHeight="511"/>
+	<SubTexture name="GoneSlayerBF missdown0010" x="0" y="1086" width="594" height="506" frameX="0" frameY="-5" frameWidth="594" frameHeight="511"/>
+	<SubTexture name="GoneSlayerBF missdown0011" x="0" y="1086" width="594" height="506" frameX="0" frameY="-5" frameWidth="594" frameHeight="511"/>
+	<SubTexture name="GoneSlayerBF missdown0012" x="0" y="1086" width="594" height="506" frameX="0" frameY="-5" frameWidth="594" frameHeight="511"/>
+	<SubTexture name="GoneSlayerBF missdown0013" x="0" y="1086" width="594" height="506" frameX="0" frameY="-5" frameWidth="594" frameHeight="511"/>
+	<SubTexture name="GoneSlayerBF missdown0014" x="0" y="1086" width="594" height="506" frameX="0" frameY="-5" frameWidth="594" frameHeight="511"/>
+	<SubTexture name="GoneSlayerBF missleft0000" x="594" y="1086" width="471" height="537" frameX="-7" frameY="-1" frameWidth="478" frameHeight="553"/>
+	<SubTexture name="GoneSlayerBF missleft0001" x="594" y="1086" width="471" height="537" frameX="-7" frameY="-1" frameWidth="478" frameHeight="553"/>
+	<SubTexture name="GoneSlayerBF missleft0002" x="1065" y="1086" width="431" height="553" frameX="-5" frameY="0" frameWidth="478" frameHeight="553"/>
+	<SubTexture name="GoneSlayerBF missleft0003" x="1065" y="1086" width="431" height="553" frameX="-5" frameY="0" frameWidth="478" frameHeight="553"/>
+	<SubTexture name="GoneSlayerBF missleft0004" x="1496" y="1086" width="433" height="553" frameX="0" frameY="0" frameWidth="478" frameHeight="553"/>
+	<SubTexture name="GoneSlayerBF missleft0005" x="1496" y="1086" width="433" height="553" frameX="0" frameY="0" frameWidth="478" frameHeight="553"/>
+	<SubTexture name="GoneSlayerBF missleft0006" x="1496" y="1086" width="433" height="553" frameX="0" frameY="0" frameWidth="478" frameHeight="553"/>
+	<SubTexture name="GoneSlayerBF missleft0007" x="1496" y="1086" width="433" height="553" frameX="0" frameY="0" frameWidth="478" frameHeight="553"/>
+	<SubTexture name="GoneSlayerBF missleft0008" x="1496" y="1086" width="433" height="553" frameX="0" frameY="0" frameWidth="478" frameHeight="553"/>
+	<SubTexture name="GoneSlayerBF missleft0009" x="1496" y="1086" width="433" height="553" frameX="0" frameY="0" frameWidth="478" frameHeight="553"/>
+	<SubTexture name="GoneSlayerBF missleft0010" x="1496" y="1086" width="433" height="553" frameX="0" frameY="0" frameWidth="478" frameHeight="553"/>
+	<SubTexture name="GoneSlayerBF missleft0011" x="1496" y="1086" width="433" height="553" frameX="0" frameY="0" frameWidth="478" frameHeight="553"/>
+	<SubTexture name="GoneSlayerBF missleft0012" x="1496" y="1086" width="433" height="553" frameX="0" frameY="0" frameWidth="478" frameHeight="553"/>
+	<SubTexture name="GoneSlayerBF missleft0013" x="1496" y="1086" width="433" height="553" frameX="0" frameY="0" frameWidth="478" frameHeight="553"/>
+	<SubTexture name="GoneSlayerBF missleft0014" x="1496" y="1086" width="433" height="553" frameX="0" frameY="0" frameWidth="478" frameHeight="553"/>
+	<SubTexture name="GoneSlayerBF missleft0015" x="1496" y="1086" width="433" height="553" frameX="0" frameY="0" frameWidth="478" frameHeight="553"/>
+	<SubTexture name="GoneSlayerBF missleft0016" x="1496" y="1086" width="433" height="553" frameX="0" frameY="0" frameWidth="478" frameHeight="553"/>
+	<SubTexture name="GoneSlayerBF missleft0017" x="1496" y="1086" width="433" height="553" frameX="0" frameY="0" frameWidth="478" frameHeight="553"/>
+	<SubTexture name="GoneSlayerBF missright0000" x="1929" y="1086" width="397" height="539" frameX="-59" frameY="-1" frameWidth="543" frameHeight="548"/>
+	<SubTexture name="GoneSlayerBF missright0001" x="1929" y="1086" width="397" height="539" frameX="-59" frameY="-1" frameWidth="543" frameHeight="548"/>
+	<SubTexture name="GoneSlayerBF missright0002" x="2326" y="1086" width="543" height="548"/>
+	<SubTexture name="GoneSlayerBF missright0003" x="2326" y="1086" width="543" height="548"/>
+	<SubTexture name="GoneSlayerBF missright0004" x="2869" y="1086" width="540" height="548" frameX="-3" frameY="0" frameWidth="543" frameHeight="548"/>
+	<SubTexture name="GoneSlayerBF missright0005" x="2869" y="1086" width="540" height="548" frameX="-3" frameY="0" frameWidth="543" frameHeight="548"/>
+	<SubTexture name="GoneSlayerBF missright0006" x="2869" y="1086" width="540" height="548" frameX="-3" frameY="0" frameWidth="543" frameHeight="548"/>
+	<SubTexture name="GoneSlayerBF missright0007" x="2869" y="1086" width="540" height="548" frameX="-3" frameY="0" frameWidth="543" frameHeight="548"/>
+	<SubTexture name="GoneSlayerBF missright0008" x="2869" y="1086" width="540" height="548" frameX="-3" frameY="0" frameWidth="543" frameHeight="548"/>
+	<SubTexture name="GoneSlayerBF missright0009" x="2869" y="1086" width="540" height="548" frameX="-3" frameY="0" frameWidth="543" frameHeight="548"/>
+	<SubTexture name="GoneSlayerBF missright0010" x="2869" y="1086" width="540" height="548" frameX="-3" frameY="0" frameWidth="543" frameHeight="548"/>
+	<SubTexture name="GoneSlayerBF missright0011" x="2869" y="1086" width="540" height="548" frameX="-3" frameY="0" frameWidth="543" frameHeight="548"/>
+	<SubTexture name="GoneSlayerBF missright0012" x="2869" y="1086" width="540" height="548" frameX="-3" frameY="0" frameWidth="543" frameHeight="548"/>
+	<SubTexture name="GoneSlayerBF missright0013" x="2869" y="1086" width="540" height="548" frameX="-3" frameY="0" frameWidth="543" frameHeight="548"/>
+	<SubTexture name="GoneSlayerBF missright0014" x="2869" y="1086" width="540" height="548" frameX="-3" frameY="0" frameWidth="543" frameHeight="548"/>
+	<SubTexture name="GoneSlayerBF missup0000" x="3409" y="1086" width="406" height="595" frameX="-78" frameY="0" frameWidth="484" frameHeight="640"/>
+	<SubTexture name="GoneSlayerBF missup0001" x="3409" y="1086" width="406" height="595" frameX="-78" frameY="0" frameWidth="484" frameHeight="640"/>
+	<SubTexture name="GoneSlayerBF missup0002" x="0" y="1681" width="477" height="580" frameX="0" frameY="-60" frameWidth="484" frameHeight="640"/>
+	<SubTexture name="GoneSlayerBF missup0003" x="0" y="1681" width="477" height="580" frameX="0" frameY="-60" frameWidth="484" frameHeight="640"/>
+	<SubTexture name="GoneSlayerBF missup0004" x="477" y="1681" width="467" height="586" frameX="-5" frameY="-54" frameWidth="484" frameHeight="640"/>
+	<SubTexture name="GoneSlayerBF missup0005" x="477" y="1681" width="467" height="586" frameX="-5" frameY="-54" frameWidth="484" frameHeight="640"/>
+	<SubTexture name="GoneSlayerBF missup0006" x="477" y="1681" width="467" height="586" frameX="-5" frameY="-54" frameWidth="484" frameHeight="640"/>
+	<SubTexture name="GoneSlayerBF missup0007" x="477" y="1681" width="467" height="586" frameX="-5" frameY="-54" frameWidth="484" frameHeight="640"/>
+	<SubTexture name="GoneSlayerBF missup0008" x="477" y="1681" width="467" height="586" frameX="-5" frameY="-54" frameWidth="484" frameHeight="640"/>
+	<SubTexture name="GoneSlayerBF missup0009" x="477" y="1681" width="467" height="586" frameX="-5" frameY="-54" frameWidth="484" frameHeight="640"/>
+	<SubTexture name="GoneSlayerBF missup0010" x="477" y="1681" width="467" height="586" frameX="-5" frameY="-54" frameWidth="484" frameHeight="640"/>
+	<SubTexture name="GoneSlayerBF missup0011" x="477" y="1681" width="467" height="586" frameX="-5" frameY="-54" frameWidth="484" frameHeight="640"/>
+	<SubTexture name="GoneSlayerBF missup0012" x="477" y="1681" width="467" height="586" frameX="-5" frameY="-54" frameWidth="484" frameHeight="640"/>
+	<SubTexture name="GoneSlayerBF missup0013" x="477" y="1681" width="467" height="586" frameX="-5" frameY="-54" frameWidth="484" frameHeight="640"/>
+	<SubTexture name="GoneSlayerBF missup0014" x="477" y="1681" width="467" height="586" frameX="-5" frameY="-54" frameWidth="484" frameHeight="640"/>
+	<SubTexture name="GoneSlayerBF right0000" x="944" y="1681" width="397" height="539" frameX="-33" frameY="0" frameWidth="430" frameHeight="539"/>
+	<SubTexture name="GoneSlayerBF right0001" x="944" y="1681" width="397" height="539" frameX="-33" frameY="0" frameWidth="430" frameHeight="539"/>
+	<SubTexture name="GoneSlayerBF right0002" x="1341" y="1681" width="389" height="539" frameX="-13" frameY="0" frameWidth="430" frameHeight="539"/>
+	<SubTexture name="GoneSlayerBF right0003" x="1341" y="1681" width="389" height="539" frameX="-13" frameY="0" frameWidth="430" frameHeight="539"/>
+	<SubTexture name="GoneSlayerBF right0004" x="1730" y="1681" width="388" height="539" frameX="-2" frameY="0" frameWidth="430" frameHeight="539"/>
+	<SubTexture name="GoneSlayerBF right0005" x="1730" y="1681" width="388" height="539" frameX="-2" frameY="0" frameWidth="430" frameHeight="539"/>
+	<SubTexture name="GoneSlayerBF right0006" x="2118" y="1681" width="388" height="539" frameX="0" frameY="0" frameWidth="430" frameHeight="539"/>
+	<SubTexture name="GoneSlayerBF right0007" x="2118" y="1681" width="388" height="539" frameX="0" frameY="0" frameWidth="430" frameHeight="539"/>
+	<SubTexture name="GoneSlayerBF right0008" x="2118" y="1681" width="388" height="539" frameX="0" frameY="0" frameWidth="430" frameHeight="539"/>
+	<SubTexture name="GoneSlayerBF right0009" x="2118" y="1681" width="388" height="539" frameX="0" frameY="0" frameWidth="430" frameHeight="539"/>
+	<SubTexture name="GoneSlayerBF right0010" x="2118" y="1681" width="388" height="539" frameX="0" frameY="0" frameWidth="430" frameHeight="539"/>
+	<SubTexture name="GoneSlayerBF right0011" x="2118" y="1681" width="388" height="539" frameX="0" frameY="0" frameWidth="430" frameHeight="539"/>
+	<SubTexture name="GoneSlayerBF right0012" x="2118" y="1681" width="388" height="539" frameX="0" frameY="0" frameWidth="430" frameHeight="539"/>
+	<SubTexture name="GoneSlayerBF right0013" x="2118" y="1681" width="388" height="539" frameX="0" frameY="0" frameWidth="430" frameHeight="539"/>
+	<SubTexture name="GoneSlayerBF right0014" x="2118" y="1681" width="388" height="539" frameX="0" frameY="0" frameWidth="430" frameHeight="539"/>
+	<SubTexture name="GoneSlayerBF up0000" x="2506" y="1681" width="406" height="595" frameX="0" frameY="0" frameWidth="408" frameHeight="654"/>
+	<SubTexture name="GoneSlayerBF up0001" x="2506" y="1681" width="406" height="595" frameX="0" frameY="0" frameWidth="408" frameHeight="654"/>
+	<SubTexture name="GoneSlayerBF up0002" x="2912" y="1681" width="396" height="594" frameX="0" frameY="-26" frameWidth="408" frameHeight="654"/>
+	<SubTexture name="GoneSlayerBF up0003" x="2912" y="1681" width="396" height="594" frameX="0" frameY="-26" frameWidth="408" frameHeight="654"/>
+	<SubTexture name="GoneSlayerBF up0004" x="3308" y="1681" width="401" height="599" frameX="-2" frameY="-44" frameWidth="408" frameHeight="654"/>
+	<SubTexture name="GoneSlayerBF up0005" x="3308" y="1681" width="401" height="599" frameX="-2" frameY="-44" frameWidth="408" frameHeight="654"/>
+	<SubTexture name="GoneSlayerBF up0006" x="0" y="2280" width="406" height="603" frameX="-2" frameY="-51" frameWidth="408" frameHeight="654"/>
+	<SubTexture name="GoneSlayerBF up0007" x="0" y="2280" width="406" height="603" frameX="-2" frameY="-51" frameWidth="408" frameHeight="654"/>
+	<SubTexture name="GoneSlayerBF up0008" x="0" y="2280" width="406" height="603" frameX="-2" frameY="-51" frameWidth="408" frameHeight="654"/>
+	<SubTexture name="GoneSlayerBF up0009" x="0" y="2280" width="406" height="603" frameX="-2" frameY="-51" frameWidth="408" frameHeight="654"/>
+	<SubTexture name="GoneSlayerBF up0010" x="0" y="2280" width="406" height="603" frameX="-2" frameY="-51" frameWidth="408" frameHeight="654"/>
+	<SubTexture name="GoneSlayerBF up0011" x="0" y="2280" width="406" height="603" frameX="-2" frameY="-51" frameWidth="408" frameHeight="654"/>
+	<SubTexture name="GoneSlayerBF up0012" x="0" y="2280" width="406" height="603" frameX="-2" frameY="-51" frameWidth="408" frameHeight="654"/>
+	<SubTexture name="GoneSlayerBF up0013" x="0" y="2280" width="406" height="603" frameX="-2" frameY="-51" frameWidth="408" frameHeight="654"/>
+	<SubTexture name="GoneSlayerBF up0014" x="0" y="2280" width="406" height="603" frameX="-2" frameY="-51" frameWidth="408" frameHeight="654"/>
+</TextureAtlas>

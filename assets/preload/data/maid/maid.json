@@ -1,6 +1,6 @@
 {
 	"song": {
-		"player1": "bf",
+		"player1": "chickfila",
 		"events": [],
 		"gfVersion": "gf",
 		"notes": [
@@ -5651,9 +5651,9 @@
 				"mustHitSection": true
 			}
 		],
-		"player2": "dad",
+		"player2": "maid",
 		"player3": null,
-		"song": "Bopeebo",
+		"song": "Maid",
 		"needsVoices": true,
 		"validScore": true,
 		"bpm": 212,

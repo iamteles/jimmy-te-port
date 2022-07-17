@@ -55,6 +55,11 @@ class Paths
 		return 'assets/$file';
 	}
 
+	inline static public function video(key:String)
+	{
+		return 'assets/videos/$key';
+	}
+
 	inline static public function file(file:String, type:AssetType = TEXT, ?library:String)
 	{
 		return getPath(file, type, library);

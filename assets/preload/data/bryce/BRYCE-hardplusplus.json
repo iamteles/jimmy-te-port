@@ -7388,9 +7388,9 @@
 				"mustHitSection": true
 			}
 		],
-		"player2": "dad",
+		"player2": "bryce",
 		"player3": null,
-		"song": "BRYCE",
+		"song": "bryce",
 		"needsVoices": true,
 		"validScore": true,
 		"bpm": 243,
