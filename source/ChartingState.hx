@@ -451,23 +451,12 @@ class ChartingState extends MusicBeatState
 
 	var stepperSusLength:FlxUINumericStepper;
 	var customNoteIDNumStepper:FlxUINumericStepper;
-	var infoAboutAltNote:FlxText;
-	var infoAboutAltNote1:FlxText;
-	var infoAboutAltNote2:FlxText;
-	var infoAboutAltNote3:FlxText;
-	var infoAboutAltNote4:FlxText;
-	var infoAboutAltNote5:FlxText;
+
 	function addNoteUI():Void
 	{
 		var tab_group_note = new FlxUI(null, UI_box);
 		tab_group_note.name = 'Note';
 
-		infoAboutAltNote = new FlxText(10,60,'0 - Inst/Normal');
-		infoAboutAltNote1 = new FlxText(10,100,'1 - Blaze');
-		infoAboutAltNote2 = new FlxText(10,140,'2 - Chara');
-		infoAboutAltNote3 = new FlxText(10,180,'3 - Corruption');
-		infoAboutAltNote4 = new FlxText(10,220,'4 - Crunchy');
-		infoAboutAltNote5 = new FlxText(10,260,'5 - Parallax');
 
 		stepperSusLength = new FlxUINumericStepper(10, 10, Conductor.stepCrochet / 2, 0, 0, Conductor.stepCrochet * 16);
 		stepperSusLength.value = 0;
@@ -483,12 +472,7 @@ class ChartingState extends MusicBeatState
 		tab_group_note.add(stepperSusLength);
 		tab_group_note.add(customNoteIDNumStepper);
 		tab_group_note.add(applyLength);
-		tab_group_note.add(infoAboutAltNote);
-		tab_group_note.add(infoAboutAltNote1);
-		tab_group_note.add(infoAboutAltNote2);
-		tab_group_note.add(infoAboutAltNote3);
-		tab_group_note.add(infoAboutAltNote4);
-		tab_group_note.add(infoAboutAltNote5);
+
 
 		
 		UI_box.addGroup(tab_group_note);
@@ -1117,7 +1101,6 @@ class ChartingState extends MusicBeatState
 	{
 		if (curSelectedNote != null)
 			stepperSusLength.value = curSelectedNote[2];
-		infoAboutAltNote.text = '0 - Inst/Normal';
 	}
 	var colorsList:Array<FlxColor> = [0xFFC24B99, 0xFF00FFFF, 0xFF12FA05, 0xFFF9393F];
 	function updateScrollBar():Void

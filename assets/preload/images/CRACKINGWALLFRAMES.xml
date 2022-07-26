@@ -24,4 +24,5 @@
 	<SubTexture name="CRACKINGWALL0019" x="4177" y="5349" width="0" height="0" frameX="0" frameY="0" frameWidth="2560" frameHeight="1400"/>
 	<SubTexture name="CRACKINGWALL0020" x="4177" y="5349" width="0" height="0" frameX="0" frameY="0" frameWidth="2560" frameHeight="1400"/>
 	<SubTexture name="CRACKINGWALL0021" x="4177" y="5349" width="0" height="0" frameX="0" frameY="0" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CRACKINGWALL0022" x="0" y="7349" width="0" height="0" frameX="0" frameY="0" frameWidth="2560" frameHeight="1400"/>
 </TextureAtlas>

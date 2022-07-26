@@ -17,7 +17,7 @@ import flixel.util.FlxTimer;
 class PauseSubState extends MusicBeatSubstate
 {
 	var grpMenuShit:FlxTypedGroup<Alphabet>;
-	var difficultyChoices:Array<String> = ["Easy", "Normal", "Hard", "Back"];
+	var difficultyChoices:Array<String> = ["Easy", "Normal", "Hard", "Hard Plus", "Hard Plus Plus", "Traditional", "Back"];
 	var modifiersChoices:Array<String> = ["Insta Fail", "No Fail", "Random Notes", "Back"];
 	var menuItems:Array<String> = ['Resume', 'Restart Song', 'Change Difficulty', 'Modifiers', 'Exit to menu'];
 	var menuItemsOG:Array<String> = ['Resume', 'Restart Song', 'Change Difficulty', 'Modifiers', 'Exit to menu'];
@@ -206,6 +206,25 @@ class PauseSubState extends MusicBeatSubstate
                     PlayState.storyDifficulty = 2;
                     
 					FlxG.switchState(new PlayState());
+
+				case "Hard Plus":
+					PlayState.SONG = Song.loadFromJson(PlayState.SONG.song.toLowerCase() + "-hardplus", PlayState.SONG.song.toLowerCase());
+					PlayState.storyDifficulty = 3;
+					
+					FlxG.switchState(new PlayState());
+
+				case "Hard Plus Plus":
+					PlayState.SONG = Song.loadFromJson(PlayState.SONG.song.toLowerCase() + "-hardplusplus", PlayState.SONG.song.toLowerCase());
+					PlayState.storyDifficulty = 4;
+					
+					FlxG.switchState(new PlayState());
+
+				case "Traditional":
+					PlayState.SONG = Song.loadFromJson(PlayState.SONG.song.toLowerCase() + "-trad", PlayState.SONG.song.toLowerCase());
+					PlayState.storyDifficulty = 5;
+					
+					FlxG.switchState(new PlayState());
+				
 					
 				case "Back":
                 	menuItems = menuItemsOG;

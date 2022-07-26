@@ -24,6 +24,7 @@ class OptionsMenu extends MusicBeatState
 
 	var options:Array<OptionCatagory> = [
 		new OptionCatagory("Preferences", [
+			new HasEventsOption(),
 			new HitsoundsOption(),
 			new PauseCountdownOption(),
 			new InstantRespawnOption(),

@@ -88,11 +88,6 @@ class PlayState extends MusicBeatState
 	private var gf:Character;
 	private var boyfriend:Boyfriend;
 
-	//robbery characters
-	private var blaze:Character;
-	private var chara:Character;
-	private var corruption:Character;
-	private var parallax:Character;
 
 
 	private var shadersLoaded:Bool = false;
@@ -203,6 +198,8 @@ class PlayState extends MusicBeatState
 	var songScore:Int = 0;
 	var scoreTxt:FlxText;
 
+	var animSuf:Bool = false;
+
 	public static var deathCounter:Int = 0;
 
 	public static var campaignScore:Int = 0;
@@ -252,6 +249,7 @@ class PlayState extends MusicBeatState
 	public static var seenCutscene:Bool = false;
 
 	var vgblack:FlxSprite;
+	//var overlays:FlxSprite;
 	public static var vgblacker:FlxSprite;
 
 
@@ -262,21 +260,29 @@ class PlayState extends MusicBeatState
 	public var startTime:Float = 0;
 	public var clicks:Array<Float> = [];
 
-	var bgRoom:BGSprite;
+	public static var bgRoom:BGSprite;
 	var bgRoomBryc:BGSprite;
-	var bgB:BGSprite;
-	var bgBREAKING:FlxSprite;
+	public static var bgB:BGSprite;
+	public static var bgBREAKING:FlxSprite;
 	var stageBG:BGSprite;
 	var groundBG:Sprite;
 	var ylylOverlay:Sprite;
 	var treeL:Sprite;
 	var treeR:Sprite;
 
-	public static var functionsList:Array<String> = ["testFunction", "blackOut", "toggleAlt"];
+	public static var isDuetCam:Bool = false;
+
+	public static var functionsList:Array<String> = ["testFunction", "blackOut", "toggleAlt", "breakBG", "breakingAnim", "duetCam"];
 
 	public static function testFunction()
 	{
 		trace("you called a function using event note");
+	}
+
+	public static function breakBG()
+	{
+		bgRoom.visible = !bgRoom.visible;
+		bgB.visible = !bgB.visible;
 	}
 
 	public static function blackOut()
@@ -284,20 +290,17 @@ class PlayState extends MusicBeatState
 		vgblacker.visible = !vgblacker.visible;
 	}
 
-	public static function toggleAlt()
+	public static function breakingAnim()
 	{
-		if(isSuffix)
-		{
-			isSuffix = !isSuffix;
-			animSuffix = "";
-		}
-		if(!isSuffix)
-		{
-			isSuffix = !isSuffix;
-			animSuffix = "alt";
-		}
+		bgB.visible = false;
+		bgBREAKING.visible = true;
+		bgBREAKING.animation.play('break');
 	}
 
+	public static function duetCam()
+	{
+		isDuetCam = !isDuetCam;
+	}
 	public static function StartFromTime(time:Float)
 	{
 		var a:PlayState = new PlayState();
@@ -450,7 +453,7 @@ class PlayState extends MusicBeatState
 
 		switch (SONG.song.toLowerCase())
 		{
-				case 'welcome-back' | 'coom-music' | 'holding-on':
+				case 'welcome-back' | 'coom-music':
 				{
 					curStage = 'jimmyroom';
 
@@ -460,6 +463,9 @@ class PlayState extends MusicBeatState
 					bgB = new BGSprite('daRoom-broken', -1000, 200, 1, 1);
 					bgB.setGraphicSize(Std.int(bgB.width * 0.8));
 					add(bgB);
+
+					bgRoom.visible = true;
+					bgB.visible = false;
 	
 					bgBREAKING = new FlxSprite(-850, 350);
 					bgBREAKING.frames = Paths.getSparrowAtlas('CRACKINGWALLFRAMES');
@@ -470,15 +476,32 @@ class PlayState extends MusicBeatState
 					bgBREAKING.visible = false;
 	
 					add(bgBREAKING);
-	
-					if(!bgRoom.visible)
-					{
+
+				}
+				case 'holding-on':
+				{
+					curStage = 'jimmyroom';
+
+					bgRoom = new BGSprite('daRoom', -1000, 200, 1, 1);
+					bgRoom.setGraphicSize(Std.int(bgRoom.width * 0.8));
+					add(bgRoom);
+					bgB = new BGSprite('daRoom-broken', -1000, 200, 1, 1);
+					bgB.setGraphicSize(Std.int(bgB.width * 0.8));
+					add(bgB);
+
 					bgRoom.visible = true;
-					}
-					if(bgB.visible)
-					{
 					bgB.visible = false;
-					}
+	
+					bgBREAKING = new FlxSprite(-850, 350);
+					bgBREAKING.frames = Paths.getSparrowAtlas('CRACKINGWALLFRAMES');
+					bgBREAKING.animation.addByPrefix('break', 'CRACKINGWALL0', 24);
+					bgBREAKING.setGraphicSize(Std.int(bgBREAKING.width * 0.8));
+	
+					bgBREAKING.updateHitbox();
+					bgBREAKING.visible = false;
+	
+					add(bgBREAKING);
+
 				}
 				case 'cutie-patootie' | 'raw' | 'bryce':
 				{
@@ -523,11 +546,14 @@ class PlayState extends MusicBeatState
 					var bg:BGSprite = new BGSprite("daCreep", -500, -300, 1, 1);
 					//bg.setGraphicSize(Std.int(bg.width * 1.8));
 					add(bg);
+
+					FlxG.save.data.finishedWeekTwo = true;
 				}
-				case 'robbery':
+				case 'jimussy':
 				{
-					curStage = 'theStolen';
-					var bg:BGSprite = new BGSprite("daRobB", -50, -260, 1, 1);
+					gfVersion = 'gfDead';
+					curStage = 'skeld';
+					var bg:BGSprite = new BGSprite("skeld", -500, -300, 1, 1);
 					//bg.setGraphicSize(Std.int(bg.width * 1.8));
 					add(bg);
 				}
@@ -552,19 +578,7 @@ class PlayState extends MusicBeatState
 		gf = new Character(400, 130, gfVersion);
 		gf.scrollFactor.set(0.95, 0.95);
 		
-		switch (SONG.song.toLowerCase())
-		{
-			case 'robbery':
-			{
-				blaze = new Character(100, 100, "blaze");
-				chara = new Character(100, 100, "chara");
-				corruption = new Character(100, 100, "corruption");
-				parallax = new Character(100, 100, "parallax");
 				dad = new Character(100, 100, SONG.player2);
-			}
-			default:
-				dad = new Character(100, 100, SONG.player2);
-		}
 
 
 		var camPos:FlxPoint = new FlxPoint(dad.getGraphicMidpoint().x, dad.getGraphicMidpoint().y);
@@ -579,32 +593,10 @@ class PlayState extends MusicBeatState
 					camPos.x += 600;
 					tweenCamIn();
 				}
-
-			case "spooky":
-				dad.y += 200;
-			case "monster":
-				dad.y += 100;
-			case 'monster-christmas':
-				dad.y += 130;
-			case 'dad':
-				camPos.x += 400;
-			case 'pico':
-				camPos.x += 600;
-				dad.y += 300;
-			case 'parents-christmas':
-				dad.x -= 500;
 			case 'senpai':
 				dad.x += 150;
 				dad.y += 360;
-				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
-			case 'senpai-angry':
-				dad.x += 150;
-				dad.y += 360;
-				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
-			case 'spirit':
-				dad.x -= 150;
-				dad.y += 100;
-				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
+
 		}
 
 		boyfriend = new Boyfriend(770, 450, SONG.player1);
@@ -619,8 +611,8 @@ class PlayState extends MusicBeatState
 			case "jimmyroom":
 				dad.x -= 500;
 				dad.y += 400;
-				boyfriend.x -= 170;
-				boyfriend.y += 170;
+				boyfriend.x -= 140;
+				boyfriend.y += 300;
 				gf.x -= 80;
 				gf.y += 550;
 			case "bryceroom":
@@ -660,6 +652,16 @@ class PlayState extends MusicBeatState
 				//dad.x += 100;
 				dad.y += 150;
 				dad.setGraphicSize(Std.int(dad.width * 0.6));
+			case 'skeld':
+				boyfriend.x += 500;
+				boyfriend.y -= 60;
+				gf.x += 300;
+				gf.y -= 180;
+				dad.x += 250;
+				dad.y += 230;
+				defaultCamZoom = 0.8;
+				camPos.set(dad.getMidpoint().x, dad.getMidpoint().y);
+
 		}
 
 		add(gf);
@@ -668,19 +670,8 @@ class PlayState extends MusicBeatState
 		if (curStage == 'limo')
 			add(limo);
 
-		switch (SONG.song.toLowerCase())
-		{
-			case 'robbery':
-			{
-				add(corruption);
-				add(blaze);
-				add(parallax);
-				add(chara);
-			}
-			default:
-				add(dad);
-		}
-
+		add(dad);
+		
 		add(boyfriend);
 
 		if(curStage == "stage")
@@ -917,7 +908,7 @@ class PlayState extends MusicBeatState
 		}
 		if(FlxG.save.data.skillIssue)
 		{
-			var skillIssue = new FlxText(0, 0, 0, "skill issue mode activated", 16);
+			var skillIssue = new FlxText(0, 0, 0, "", 16); //ar ar ar
 			skillIssue.screenCenter(X);
 			skillIssue.setFormat(Paths.font("creme.ttf"), 16, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			skillIssue.scrollFactor.set();
@@ -967,6 +958,11 @@ class PlayState extends MusicBeatState
 
 		
 		#end
+		//overlays = new FlxSprite().loadGraphic(Paths.image('amongusballs'));
+		//overlays.visible = false;
+		//overlays.cameras = [camHUD];
+		//add(overlays);
+
 		strumLineNotes.cameras = [camHUD];
 		notes.cameras = [camHUD];
 		healthBar.cameras = [camHUD];
@@ -990,6 +986,8 @@ class PlayState extends MusicBeatState
 		// UI_camera.zoom = 1;
 
 		// cameras = [FlxG.cameras.list[1]];
+
+
 		startingSong = true;
 
 		if (isStoryMode && !seenCutscene)
@@ -1027,14 +1025,13 @@ class PlayState extends MusicBeatState
 					});
 				case 'senpai':
 					schoolIntro(doof);
-				case 'mediashare':
-					winterCountdown();
 				case 'roses':
 					FlxG.sound.play(Paths.sound('ANGRY'));
 					schoolIntro(doof);
 				case 'thorns':
 					schoolIntro(doof);
 				case 'trigger-creep':
+					//overlays.visible = true;
 					playCutscene("trigger.mp4");
 				default:
 					startCountdown();
@@ -1054,6 +1051,8 @@ class PlayState extends MusicBeatState
 		}
 
 		super.create();
+
+		
 	}
 
 
@@ -1288,6 +1287,11 @@ class PlayState extends MusicBeatState
 	}
 	function startCountdown():Void
 	{
+		//vgblacker.visible = false;
+		//overlays.visible = false;
+
+		isDuetCam = false;
+		
 		inCutscene = false;
 		
 		generateStaticArrowsDAD();
@@ -1740,7 +1744,7 @@ class PlayState extends MusicBeatState
 					}
 
 				default:
-					babyArrow.frames = Paths.getSparrowAtlas("noteskins/STRUMS");
+					babyArrow.frames = Paths.getSparrowAtlas("NOTE_assets");
 					babyArrow.animation.addByPrefix('green', 'arrowUP', 24, true);
 					babyArrow.animation.addByPrefix('blue', 'arrowDOWN', 24, true);
 					babyArrow.animation.addByPrefix('purple', 'arrowLEFT', 24, true);
@@ -1859,7 +1863,7 @@ class PlayState extends MusicBeatState
 					}
 
 				default:
-					babyArrow.frames = Paths.getSparrowAtlas(("noteskins/STRUMS"));
+					babyArrow.frames = Paths.getSparrowAtlas(("NOTE_assets"));
 					babyArrow.animation.addByPrefix('green', 'arrowUP', 24, true);
 					babyArrow.animation.addByPrefix('blue', 'arrowDOWN', 24, true);
 					babyArrow.animation.addByPrefix('purple', 'arrowLEFT', 24, true);
@@ -1874,45 +1878,25 @@ class PlayState extends MusicBeatState
 							babyArrow.x += Note.swagWidth * 0;
 							babyArrow.animation.addByPrefix('static', 'arrowLEFT', 24, true);
 							babyArrow.animation.addByPrefix('pressed', 'left press', 24, false);
-							babyArrow.animation.addByPrefix('confirm', 'left confirm', 24, false);
-							babyArrow.animation.addByPrefix('confirmP', 'left confirm p', 24, false);
-							babyArrow.animation.addByPrefix('confirmCR', 'left confirm cr', 24, false);
-							babyArrow.animation.addByPrefix('confirmCO', 'left confirm co', 24, false);
-							babyArrow.animation.addByPrefix('confirmCH', 'left confirm ch', 24, false);
-							babyArrow.animation.addByPrefix('confirmB', 'left confirm b', 24, false);
+							babyArrow.animation.addByPrefix('confirm', 'left confirm0', 24, false);
 
 						case 1:
 							babyArrow.x += Note.swagWidth * 1;
 							babyArrow.animation.addByPrefix('static', 'arrowDOWN', 24, true);
 							babyArrow.animation.addByPrefix('pressed', 'down press', 24, false);
-							babyArrow.animation.addByPrefix('confirm', 'down confirm', 24, false);
-							babyArrow.animation.addByPrefix('confirmP', 'down confirm p', 24, false);
-							babyArrow.animation.addByPrefix('confirmCR', 'down confirm cr', 24, false);
-							babyArrow.animation.addByPrefix('confirmCO', 'down confirm co', 24, false);
-							babyArrow.animation.addByPrefix('confirmCH', 'down confirm ch', 24, false);
-							babyArrow.animation.addByPrefix('confirmB', 'down confirm b', 24, false);
+							babyArrow.animation.addByPrefix('confirm', 'down confirm0', 24, false);
 
 						case 2:
 							babyArrow.x += Note.swagWidth * 2;
 							babyArrow.animation.addByPrefix('static', 'arrowUP', 24, true);
 							babyArrow.animation.addByPrefix('pressed', 'up press', 24, false);
-							babyArrow.animation.addByPrefix('confirm', 'up confirm', 24, false);
-							babyArrow.animation.addByPrefix('confirmP', 'up confirm p', 24, false);
-							babyArrow.animation.addByPrefix('confirmCR', 'up confirm cr', 24, false);
-							babyArrow.animation.addByPrefix('confirmCO', 'up confirm co', 24, false);
-							babyArrow.animation.addByPrefix('confirmCH', 'up confirm ch', 24, false);
-							babyArrow.animation.addByPrefix('confirmB', 'up confirm b', 24, false);
+							babyArrow.animation.addByPrefix('confirm', 'up confirm0', 24, false);
 
 						case 3:
 							babyArrow.x += Note.swagWidth * 3;
 							babyArrow.animation.addByPrefix('static', 'arrowRIGHT', 24, true);
 							babyArrow.animation.addByPrefix('pressed', 'right press', 24, false);
-							babyArrow.animation.addByPrefix('confirm', 'right confirm', 24, false);
-							babyArrow.animation.addByPrefix('confirmP', 'right confirm p', 24, false);
-							babyArrow.animation.addByPrefix('confirmCR', 'right confirm cr', 24, false);
-							babyArrow.animation.addByPrefix('confirmCO', 'right confirm co', 24, false);
-							babyArrow.animation.addByPrefix('confirmCH', 'right confirm ch', 24, false);
-							babyArrow.animation.addByPrefix('confirmB', 'right confirm b', 24, false);
+							babyArrow.animation.addByPrefix('confirm', 'right confirm0', 24, false);
 
 					}
 			}
@@ -2394,7 +2378,7 @@ class PlayState extends MusicBeatState
 				// trace(PlayState.SONG.notes[Std.int(curStep / 16)].mustHitSection);
 			}
 
-			if (/*camFollow.x != dad.getMidpoint().x + 150 && */!PlayState.SONG.notes[Std.int(curStep / 16)].mustHitSection && !pointAtGF && SONG.song.toLowerCase() != "mediashare")
+			if (/*camFollow.x != dad.getMidpoint().x + 150 && */!PlayState.SONG.notes[Std.int(curStep / 16)].mustHitSection && !pointAtGF && !isDuetCam && SONG.song.toLowerCase() != "mediashare")
 			{
 				var camFollowX:Float = dad.getMidpoint().x;
 				var camFollowY:Float = dad.getMidpoint().y;
@@ -2422,6 +2406,10 @@ class PlayState extends MusicBeatState
 						defaultCamZoom = 0.8 + camZoomAditive;
 					case 'dad': //debug
 						defaultCamZoom = 0.2;
+					case 'jimpostor':
+						defaultCamZoom = 0.8 + camZoomAditive;
+						camFollowX = dad.getMidpoint().x;
+						camFollowY = dad.getMidpoint().y;
 					default:
 						camFollowX = dad.getMidpoint().x;
 						camFollowY = dad.getMidpoint().y;
@@ -2453,7 +2441,7 @@ class PlayState extends MusicBeatState
 				}
 			}
 
-			if (PlayState.SONG.notes[Std.int(curStep / 16)].mustHitSection/* && camFollow.x != boyfriend.getMidpoint().x - 100*/ && !pointAtGF && SONG.song.toLowerCase() != "mediashare")
+			if (PlayState.SONG.notes[Std.int(curStep / 16)].mustHitSection/* && camFollow.x != boyfriend.getMidpoint().x - 100*/ && !pointAtGF && !isDuetCam && SONG.song.toLowerCase() != "mediashare")
 			{
 				var camFollowX:Float = boyfriend.getMidpoint().x;
 				var camFollowY:Float = boyfriend.getMidpoint().y;
@@ -2466,8 +2454,9 @@ class PlayState extends MusicBeatState
 				switch (curStage)
 				{
 					case 'jimmyroom':
-						camFollow.x = boyfriend.getMidpoint().x - 300;
-						defaultCamZoom = 1.2;
+						camFollowX = boyfriend.getMidpoint().x - 100;
+						camFollowY = boyfriend.getMidpoint().y + 50;	
+						defaultCamZoom = 1.1 + camZoomAditive;
 					case 'bryceroom':
 						camFollow.x = boyfriend.getMidpoint().x - 300;
 						defaultCamZoom = 1.2;
@@ -2482,6 +2471,10 @@ class PlayState extends MusicBeatState
 						defaultCamZoom = 0.8 + camZoomAditive;
 					case 'daStolen': //debug
 						defaultCamZoom = 0.2;
+					case 'skeld':
+						defaultCamZoom = 0.8 + camZoomAditive;
+						camFollowY = dad.getMidpoint().y;
+						camFollowX = boyfriend.getMidpoint().x - 100;
 					default:
 						camFollowX = boyfriend.getMidpoint().x;
 						camFollowY = boyfriend.getMidpoint().y;
@@ -2515,6 +2508,10 @@ class PlayState extends MusicBeatState
 			if(pointAtGF)
 			{
 				camFollow.setPosition(gf.getMidpoint().x, gf.getMidpoint().y - 20);
+			}
+			if(isDuetCam)
+			{
+				camFollow.setPosition(boyfriend.getMidpoint().x - 450, dad.getMidpoint().y - 100);
 			}
 			if(SONG.song.toLowerCase() == "mediashare")
 			{
@@ -2705,63 +2702,92 @@ class PlayState extends MusicBeatState
 				if(daNote.eventNote && daNote.wasGoodHit)
 				{
 					var event:String = cast(daNote.eventType, String);
-					switch(event)
+					if(!FlxG.save.data.eventThing)
 					{
-						case "changeDadCharacter":
-							changeDadCharacter(daNote.eventArgs[0], daNote.eventArgs[1], daNote.eventArgs[2]);
-						case "changeBFCharacter":
-							changeBFCharacter(daNote.eventArgs[0], daNote.eventArgs[1], daNote.eventArgs[2]);
-						case "chromaticAberrations":
-							chromOn = daNote.eventArgs[0] == "ENABLE";
-						case "vignette":
-							//trace("vignette" + " " + daNote.eventArgs[0] + " " + daNote.eventArgs[1]);
-							vignetteOn = daNote.eventArgs[0] == "ENABLE";
-							vignetteRadius = daNote.eventArgs[1];
-						case "changeCameraBeat":
-							//trace("a");
-							cameraBeatZoom = 0.025 * daNote.eventArgs[0];
-							cameraBeatSpeed = daNote.eventArgs[1];
-						case "changeZoom":
-							camZoomAditive = daNote.eventArgs[0];
-						case "playBFAnim":
-							boyfriend.playAnim(daNote.eventArgs[0], true);
-						case "playDadAnim":
-							dad.playAnim(daNote.eventArgs[0], true);
-						case "playGFAnim":
-							gf.playAnim(daNote.eventArgs[0], true);
-						case "shakeCamera":
-							FlxG.camera.shake(daNote.eventArgs[0] / 100, daNote.eventArgs[1]);
-						case "pointAtGF":
-							pointAtGF = daNote.eventArgs[0] == "ENABLE";
-						case "grayScale":
-							//trace(daNote.eventArgs[0]);
-							grayScaleOn = daNote.eventArgs[0] == "ENABLE";
-						case "invertColor":
-							//trace(daNote.eventArgs[0]);
-							invertOn = daNote.eventArgs[0] == "ENABLE";
-						case "pixelate":
-							//trace(daNote.eventArgs[0]);
-							//trace(daNote.eventArgs[1]);
-							pixelateOn = daNote.eventArgs[0] == "ENABLE";
-							pixelateShaderPixelSize = daNote.eventArgs[1];
-						case "zoomCam":
-							FlxG.camera.zoom += 0.025 * daNote.eventArgs[0];
-							camHUD.zoom += 0.025 * daNote.eventArgs[0] * 2;
-						case "rotateCam":
-							FlxG.camera.angle += daNote.eventArgs[0];
-							camHUD.angle += daNote.eventArgs[0];
-						case "wavyStrumLine":
-							wavyStrumLineNotes = daNote.eventArgs[0] == "ENABLE";
-						case "countdown":
-							startFakeCountdown(daNote.eventArgs[0] == "With Sound");
-						case "callFunction": // ayo wtf callFunction note
-							if(Reflect.field(PlayState, daNote.eventArgs[0]) != null)
-							{
-								Reflect.callMethod(PlayState, Reflect.field(PlayState, daNote.eventArgs[0]), []);
-							}
-						case "flashCamera":
-							FlxG.camera.flash(FlxColor.WHITE, daNote.eventArgs[0]);
+						switch(event)
+						{
+							case "changeDadCharacter":
+								changeDadCharacter(daNote.eventArgs[0], daNote.eventArgs[1], daNote.eventArgs[2]);
+							case "changeBFCharacter":
+								changeBFCharacter(daNote.eventArgs[0], daNote.eventArgs[1], daNote.eventArgs[2]);
+							case "playBFAnim":
+								boyfriend.playAnim(daNote.eventArgs[0], true);
+							case "playDadAnim":
+								dad.playAnim(daNote.eventArgs[0], true);
+							case "playGFAnim":
+								gf.playAnim(daNote.eventArgs[0], true);
+							case "pointAtGF":
+								pointAtGF = daNote.eventArgs[0] == "ENABLE";
+							case "countdown":
+								startFakeCountdown(daNote.eventArgs[0] == "With Sound");
+							case "callFunction":
+								if(Reflect.field(PlayState, daNote.eventArgs[0]) != null)
+								{
+									Reflect.callMethod(PlayState, Reflect.field(PlayState, daNote.eventArgs[0]), []);
+								}
+						}
 					}
+					else
+					{
+						switch(event)
+						{
+							case "changeDadCharacter":
+								changeDadCharacter(daNote.eventArgs[0], daNote.eventArgs[1], daNote.eventArgs[2]);
+							case "changeBFCharacter":
+								changeBFCharacter(daNote.eventArgs[0], daNote.eventArgs[1], daNote.eventArgs[2]);
+							case "chromaticAberrations":
+								chromOn = daNote.eventArgs[0] == "ENABLE";
+							case "vignette":
+								//trace("vignette" + " " + daNote.eventArgs[0] + " " + daNote.eventArgs[1]);
+								vignetteOn = daNote.eventArgs[0] == "ENABLE";
+								vignetteRadius = daNote.eventArgs[1];
+							case "changeCameraBeat":
+								//trace("a");
+								cameraBeatZoom = 0.025 * daNote.eventArgs[0];
+								cameraBeatSpeed = daNote.eventArgs[1];
+							case "changeZoom":
+								camZoomAditive = daNote.eventArgs[0];
+							case "playBFAnim":
+								boyfriend.playAnim(daNote.eventArgs[0], true);
+							case "playDadAnim":
+								dad.playAnim(daNote.eventArgs[0], true);
+							case "playGFAnim":
+								gf.playAnim(daNote.eventArgs[0], true);
+							case "shakeCamera":
+								FlxG.camera.shake(daNote.eventArgs[0] / 100, daNote.eventArgs[1]);
+							case "pointAtGF":
+								pointAtGF = daNote.eventArgs[0] == "ENABLE";
+							case "grayScale":
+								//trace(daNote.eventArgs[0]);
+								grayScaleOn = daNote.eventArgs[0] == "ENABLE";
+							case "invertColor":
+								//trace(daNote.eventArgs[0]);
+								invertOn = daNote.eventArgs[0] == "ENABLE";
+							case "pixelate":
+								//trace(daNote.eventArgs[0]);
+								//trace(daNote.eventArgs[1]);
+								pixelateOn = daNote.eventArgs[0] == "ENABLE";
+								pixelateShaderPixelSize = daNote.eventArgs[1];
+							case "zoomCam":
+								FlxG.camera.zoom += 0.025 * daNote.eventArgs[0];
+								camHUD.zoom += 0.025 * daNote.eventArgs[0] * 2;
+							case "rotateCam":
+								FlxG.camera.angle += daNote.eventArgs[0];
+								camHUD.angle += daNote.eventArgs[0];
+							case "wavyStrumLine":
+								wavyStrumLineNotes = daNote.eventArgs[0] == "ENABLE";
+							case "countdown":
+								startFakeCountdown(daNote.eventArgs[0] == "With Sound");
+							case "callFunction": // ayo wtf callFunction note
+								if(Reflect.field(PlayState, daNote.eventArgs[0]) != null)
+								{
+									Reflect.callMethod(PlayState, Reflect.field(PlayState, daNote.eventArgs[0]), []);
+								}
+							case "flashCamera":
+								FlxG.camera.flash(FlxColor.WHITE, daNote.eventArgs[0]);
+						}
+					}
+
 					daNote.kill();
 					notes.remove(daNote, true);
 					daNote.destroy();
@@ -2780,72 +2806,33 @@ class PlayState extends MusicBeatState
 					if(daNote.altNote)
 						altAnim = '-alt';
 					
-					switch(daNote.customNoteID)
+					if (animSuf)
 					{
-						case 0:
-							switch (Math.abs(daNote.noteData))
-							{						
-								case 0:
-									dad.playAnim('singLEFT' + animSuffix, true);
-								case 1:
-									dad.playAnim('singDOWN' + animSuffix, true);
-								case 2:
-									dad.playAnim('singUP' + animSuffix, true);
-								case 3:
-									dad.playAnim('singRIGHT' + animSuffix, true);
-							}
-						case 1:
-							switch (Math.abs(daNote.noteData))
-							{						
-								case 0:
-									blaze.playAnim('singLEFT' + animSuffix, true);
-								case 1:
-									blaze.playAnim('singDOWN' + animSuffix, true);
-								case 2:
-									blaze.playAnim('singUP' + animSuffix, true);
-								case 3:
-									blaze.playAnim('singRIGHT' + animSuffix, true);
-							}
-
-						case 2:
-							switch (Math.abs(daNote.noteData))
-							{						
-								case 0:
-									chara.playAnim('singLEFT' + animSuffix, true);
-								case 1:
-									chara.playAnim('singDOWN' + animSuffix, true);
-								case 2:
-									chara.playAnim('singUP' + animSuffix, true);
-								case 3:
-									chara.playAnim('singRIGHT' + animSuffix, true);
-							}
-						case 3:
-							switch (Math.abs(daNote.noteData))
-							{						
-								case 0:
-									corruption.playAnim('singLEFT' + animSuffix, true);
-								case 1:
-									corruption.playAnim('singDOWN' + animSuffix, true);
-								case 2:
-									corruption.playAnim('singUP' + animSuffix, true);
-								case 3:
-									corruption.playAnim('singRIGHT' + animSuffix, true);
-							}
-						case 4:
-							//a
-						case 5:
-							switch (Math.abs(daNote.noteData))
-							{						
-								case 0:
-									parallax.playAnim('singLEFT' + animSuffix, true);
-								case 1:
-									parallax.playAnim('singDOWN' + animSuffix, true);
-								case 2:
-									parallax.playAnim('singUP' + animSuffix, true);
-								case 3:
-									parallax.playAnim('singRIGHT' + animSuffix, true);
-							}
-							
+						switch (Math.abs(daNote.noteData))
+						{						
+							case 0:
+								dad.playAnim('singLEFTalt', true);
+							case 1:
+								dad.playAnim('singDOWNalt', true);
+							case 2:
+								dad.playAnim('singUPalt', true);
+							case 3:
+								dad.playAnim('singRIGHTalt', true);
+						}
+					}
+					else
+					{
+						switch (Math.abs(daNote.noteData))
+						{						
+							case 0:
+								dad.playAnim('singLEFT', true);
+							case 1:
+								dad.playAnim('singDOWN', true);
+							case 2:
+								dad.playAnim('singUP', true);
+							case 3:
+								dad.playAnim('singRIGHT', true);
+						}
 					}
 
 					if(FlxG.random.bool(85) && !daNote.isSustainNote && (FlxG.save.data.showEnemyNotes || !FlxG.save.data.middlescroll))
@@ -2855,21 +2842,7 @@ class PlayState extends MusicBeatState
 							{
 								if(spr.ID == Math.abs(daNote.noteData))
 								{
-									switch(daNote.customNoteID)
-									{	
-										case 0:
-											spr.animation.play('confirm', true);
-										case 1:
-											spr.animation.play('confirmB', true);
-										case 2:
-											spr.animation.play('confirmCH', true);
-										case 3:
-											spr.animation.play('confirmCO', true);
-										case 4:
-											spr.animation.play('confirmCR', true);
-										case 5:
-											spr.animation.play('confirmP', true);
-									}
+									spr.animation.play('confirm', true);
 									new FlxTimer().start(0.5, function(tmr:FlxTimer)
 									{
 										
@@ -2960,10 +2933,9 @@ class PlayState extends MusicBeatState
 		}
 		
 
-		#if debug
 		if (FlxG.keys.justPressed.ONE)
 			endSong();
-		#end
+
 	}
 
 	function endSong():Void
@@ -3002,7 +2974,13 @@ class PlayState extends MusicBeatState
 				transIn = FlxTransitionableState.defaultTransIn;
 				transOut = FlxTransitionableState.defaultTransOut;
 
-				FlxG.switchState(new StoryMenuState());
+				switch(curSong.toLowerCase())
+				{
+					case 'trigger-creep':
+						FlxG.switchState(new ThanksState());
+					default:
+						FlxG.switchState(new StoryMenuState());
+				}
 
 				// if ()
 				StoryMenuState.weekUnlocked[Std.int(Math.min(storyWeek + 1, StoryMenuState.weekUnlocked.length - 1))] = true;
@@ -3566,7 +3544,7 @@ class PlayState extends MusicBeatState
 
 			switch (boyfriend.curCharacter)
 			{
-				case 'jimmyPLAYER' | 'chickfila':
+				case 'jimmyPLAYER' | 'chickfila' | 'crewfriend':
 					//do nothin
 				default:
 					switch (direction)
@@ -3668,6 +3646,84 @@ class PlayState extends MusicBeatState
 			}
 		}
 	}
+	/*
+	function goodNoteHit(note:Note):Void
+		{
+			if (!note.wasGoodHit)
+			{
+				//if(cpuControlled && (note.ignoreNote || note.hitCausesMiss)) return;
+	
+				if(FlxG.save.data.hitSounds)
+					FlxG.sound.play(Paths.sound("hit1"), FlxG.random.float(0.01, 0.015));
+	
+				/*
+				if(note.hitCausesMiss) {
+					noteMiss(note);
+	
+					note.wasGoodHit = true;
+					if (!note.isSustainNote)
+					{
+						note.kill();
+						notes.remove(note, true);
+						note.destroy();
+					}
+					return;
+				}
+				
+				if (!note.isSustainNote)
+				{
+					combo += 1;
+					if(combo > 9999) combo = 9999;
+					popUpScore(note.strumTime, note);
+				}
+				//health += note.hitHealth * healthGain;
+	
+				switch (note.noteData)
+				{
+					case 0:
+						boyfriend.playAnim('singLEFT', true);
+					case 1:
+						boyfriend.playAnim('singDOWN', true);
+					case 2:
+						boyfriend.playAnim('singUP', true);
+					case 3:
+						boyfriend.playAnim('singRIGHT', true);
+				}
+	
+				/*
+				if(cpuControlled) {
+					var time:Float = 0.15;
+					if(note.isSustainNote && !note.animation.curAnim.name.endsWith('end')) {
+						time += 0.15;
+					}
+					StrumPlayAnim(false, Std.int(Math.abs(note.noteData)), time);
+				} else { 
+					playerStrums.forEach(function(spr:Sprite)
+					{
+						if (Math.abs(note.noteData) == spr.ID)
+						{
+							spr.animation.play('confirm', true);
+						}
+					});
+				//}
+				note.wasGoodHit = true;
+				vocals1.volume = 1;
+				vocals2.volume = 1;
+	
+				var isSus:Bool = note.isSustainNote; //GET OUT OF MY HEAD, GET OUT OF MY HEAD, GET OUT OF MY HEAD
+				var leData:Int = Math.round(Math.abs(note.noteData));
+				//var leType:String = note.noteType;
+				//callOnLuas('goodNoteHit', [notes.members.indexOf(note), leData, leType, isSus]);
+	
+				if (!note.isSustainNote)
+				{
+					note.kill();
+					notes.remove(note, true);
+					note.destroy();
+				}
+			}
+		}
+	*/
 
 	var fastCarCanDrive:Bool = true;
 
@@ -3810,134 +3866,27 @@ class PlayState extends MusicBeatState
 		//for events
 		switch (SONG.song.toLowerCase()) 
 		{
-
-			case 'blammed':
-				if(curStep >= 512 && curStep < 768)
-				{
-					chromOn = true;
-					if(curStep >= 618 && curStep < 640)
-					{
-						cameraBeatSpeed = 1;
-						cameraBeatZoom = 0.025 * 6;
-					}
-					else if(curStep >= 752 && curStep < 768)
-					{
-						cameraBeatSpeed = 1;
-						cameraBeatZoom = 0.025 * 6;
-					}
-					else
-					{
-						cameraBeatSpeed = 2;
-						cameraBeatZoom = 0.025 * 3;
-					}
-				}
-				else
-				{
-					chromOn = false;
-					cameraBeatSpeed = 4;
-					cameraBeatZoom = 0.025 * 1;
-				}
-			case "bopeebo":
+			case 'trigger-creep': //commited death
 				switch (curStep)
 				{
-					case 256:
-						defaultCamZoom -= 0.17;
-						FlxTween.tween(backDudes, {y: backDudes.y - 500}, Conductor.crochet / 1000, {ease: FlxEase.quadInOut});
-						FlxTween.tween(centralDudes, {y: centralDudes.y - 500}, Conductor.crochet / 1000, {ease: FlxEase.quadInOut});
-						FlxTween.tween(frontDudes, {y: frontDudes.y - 500}, Conductor.crochet / 1000, {ease: FlxEase.quadInOut});
-					case 320:
-						defaultCamZoom += 0.17;
-						FlxTween.tween(backDudes, {y: backDudes.y + 500}, Conductor.crochet / 1000, {ease: FlxEase.quadInOut});
-						FlxTween.tween(centralDudes, {y: centralDudes.y + 500}, Conductor.crochet / 1000, {ease: FlxEase.quadInOut});
-						FlxTween.tween(frontDudes, {y: frontDudes.y + 500}, Conductor.crochet / 1000, {ease: FlxEase.quadInOut});
+					case 0:
+						animSuf = false;
+					case 509:
+						animSuf = true;
 				}
-			case "fresh":
-				switch (curStep)
-				{
-					case 320 | 576:
-						defaultCamZoom -= 0.17;
-						FlxTween.tween(backDudes, {y: backDudes.y - 500}, Conductor.crochet / 1000, {ease: FlxEase.quadInOut});
-						FlxTween.tween(centralDudes, {y: centralDudes.y - 500}, Conductor.crochet / 1000, {ease: FlxEase.quadInOut});
-						FlxTween.tween(frontDudes, {y: frontDudes.y - 500}, Conductor.crochet / 1000, {ease: FlxEase.quadInOut});
-					case 448 | 636:
-						defaultCamZoom += 0.17;
-						FlxTween.tween(backDudes, {y: backDudes.y + 500}, Conductor.crochet / 1000, {ease: FlxEase.quadInOut});
-						FlxTween.tween(centralDudes, {y: centralDudes.y + 500}, Conductor.crochet / 1000, {ease: FlxEase.quadInOut});
-						FlxTween.tween(frontDudes, {y: frontDudes.y + 500}, Conductor.crochet / 1000, {ease: FlxEase.quadInOut});
-				}
-			case 'roses':
-
-				// im actually using beats here so im multiplying it by 4 lol
-				if(curStep >= 112 * 4 && curStep < 128 * 4)
-				{
-					chromOn = true;
-				}
-				else if(curStep >= 160 * 4 && curStep < 176 * 4)
-				{
-					chromOn = true;
-				}
-				else
-				{
-					chromOn = false;
-				}
-
-			case 'milf':
-				if(curStep >= 168 * 4 && curStep < 200 * 4)
-					chromOn = true;
-				else
-					chromOn = false;
-			/* 
-
-			// example
-			case 'milf':
-				switch (curStep)
-				{
-					case 512:
-						// your event code
-					case 1024:
-						// your event code
-				}
-			*/
+			
 			case 'holding-on':
 
 				switch (curStep)
 				{
-					
-					case 388: //388
-					{
-						bgRoom.visible = false;
-						bgB.visible = true;
-						if(doMoreFlashes)
-							FlxG.camera.flash(FlxColor.WHITE, 1);
-						doMoreFlashes = false;
-						//FlxG.camera.shake(FlxG.random.float(0.005, 0.00875), Conductor.stepCrochet / 1000);
-						
-					}
 					case 1155: //1155
 					{
-						bgRoom.visible = false;
-						bgB.visible = false;
-						if(doMorelashes)
-							FlxG.camera.flash(FlxColor.WHITE, 1);
-						doMorelashes = false;
-						//defaultCamZoom = 0.5;
-						//snapCamFollowToPos(250, 800);
-						bgBREAKING.visible = true;
-						bgBREAKING.animation.play('break');
-
+						camZoomAditive = -0.5;
 					}
 					case 1167: //1167
 					{
 						bgBREAKING.visible = false;
 					}
-					case 1440: //1440
-					{
-						defaultCamZoom = 0.5;
-						FlxTween.tween(dad, {x: -5000}, 1.4, {ease: FlxEase.linear});
-						FlxTween.tween(boyfriend, {y: 5000}, 1.4, {ease: FlxEase.linear});
-						FlxTween.tween(gf, {y: 5000}, 1.4, {ease: FlxEase.linear});	
-					}
-
 				}
 			case 'bryce':
 				switch (curStep)
@@ -4142,15 +4091,8 @@ class PlayState extends MusicBeatState
 
 		if (boyfriend.curCharacter != "spooky" && !boyfriend.animation.curAnim.name.startsWith("sing") && curBeat % 2 == 0 && boyfriend.animation.curAnim.name != "spinMic" || (boyfriend.animation.curAnim.name == "spinMic" && boyfriend.animation.curAnim.finished))
 			boyfriend.dance();
-		if(!dad.animation.curAnim.name.startsWith("sing") && curBeat % 2 == 0 && dad.animation.curAnim.name != "spinMic" || (dad.animation.curAnim.name == "spinMic" && dad.animation.curAnim.finished && SONG.song.toLowerCase() != "robbery"))
+		if(!dad.animation.curAnim.name.startsWith("sing") && curBeat % 2 == 0 && dad.animation.curAnim.name != "spinMic" || (dad.animation.curAnim.name == "spinMic" && dad.animation.curAnim.finished))
 			dad.dance();
-		else if(!dad.animation.curAnim.name.startsWith("sing") && curBeat % 2 == 0 && dad.animation.curAnim.name != "spinMic" || (dad.animation.curAnim.name == "spinMic" && dad.animation.curAnim.finished && SONG.song.toLowerCase() == "robbery"))
-		{
-			parallax.dance();
-			chara.dance();
-			corruption.dance();
-			blaze.dance();
-		}
 		if (curBeat % 8 == 7 && curSong == 'Bopeebo')
 			boyfriend.playAnim('hey', true);
 

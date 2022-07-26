@@ -39,6 +39,8 @@ class TitleState extends MusicBeatState
 	var textGroup:FlxGroup;
 	var ngSpr:Sprite;
 
+	var backgroundImg:String = "daRoom";
+
 	var curWacky:Array<String> = [];
 
 	var wackyImage:Sprite;
@@ -57,6 +59,10 @@ class TitleState extends MusicBeatState
 
 
 		FlxG.sound.volume = 0.3;
+		trace(FlxG.save.data.finishedWeekOne);
+		trace(initialized);
+		if(FlxG.save.data.finishedWeekOne)
+			backgroundImg = "daRoom-broken";
 
 		#if ng
 		var ng:NGio = new NGio(APIStuff.API, APIStuff.EncKey);
@@ -94,8 +100,7 @@ class TitleState extends MusicBeatState
 	}
 
 	var logoBl:Sprite;
-	var logoTE:Sprite;
-	var gfDance:Sprite;
+	var background:Sprite;
 	var danceLeft:Bool = false;
 	var titleText:Sprite;
 
@@ -136,30 +141,22 @@ class TitleState extends MusicBeatState
 		// bg.updateHitbox();
 		add(bg);
 
-		logoBl = new Sprite(-100, 1150); // -100 -50
-		logoBl.frames = Paths.getSparrowAtlas('FNF_Logo');
+		background = new Sprite(0, 0).loadGraphics(Paths.image(backgroundImg));
+		background.setGraphicSize(Std.int(background.width * 0.55));
+		background.screenCenter();
+		add(background);
+
+		logoBl = new Sprite(0, 0); // -100 -50
+		logoBl.frames = Paths.getSparrowAtlas('ylyl_funkin');
 		logoBl.antialiasing = true;
-		logoBl.animation.addByPrefix('bump', 'FNF Logo', 24);
+		logoBl.animation.addByPrefix('bump', 'logo bumbin0', 24);
 		logoBl.animation.play('bump');
+
 		logoBl.updateHitbox();
 		// logoBl.screenCenter();
 		// logoBl.color = FlxColor.BLACK;
 
-		logoTE = new Sprite(2000, 450);// 620 450
-		logoTE.frames = Paths.getSparrowAtlas('Logo_TE');
-		logoTE.antialiasing = true;
-		logoTE.animation.addByPrefix('bump', 'Logo TE', 24);
-		logoTE.animation.play('bump');
-		logoTE.updateHitbox();
-
-		gfDance = new Sprite(700, 1150); // 600 0
-		gfDance.frames = Paths.getSparrowAtlas('gf_starting_screen');
-		gfDance.animation.addByIndices('danceLeft', 'gf starting screen', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
-		gfDance.animation.addByIndices('danceRight', 'gf starting screen', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
-		gfDance.antialiasing = true;
 		add(logoBl);
-		add(gfDance);
-		add(logoTE);
 		
 
 		titleText = new Sprite(100, 1150); // 100 FlxG.height * 0.8
@@ -169,15 +166,14 @@ class TitleState extends MusicBeatState
 		titleText.antialiasing = true;
 		titleText.animation.play('idle');
 		titleText.updateHitbox();
+		titleText.screenCenter(X);
 		// titleText.screenCenter(X);
 		add(titleText);
 
-		logoBl.setGraphicSize(Std.int(logoBl.width * 1.05));
-		logoTE.setGraphicSize(Std.int(logoTE.width * 1.1));
-		gfDance.setGraphicSize(Std.int(gfDance.width * 0.65));
+		logoBl.setGraphicSize(Std.int(logoBl.width * 0.75));
 		logoBl.updateHitbox();
-		logoTE.updateHitbox();
-		gfDance.updateHitbox();
+		logoBl.screenCenter(X);
+		//logoBl.screenCenter(Y);
 		// FlxTween.tween(logo, {y: logoBl.y + 50}, 0.6, {ease: FlxEase.quadInOut, type: PINGPONG, startDelay: 0.1});
 
 		credGroup = new FlxGroup();
@@ -282,16 +278,15 @@ class TitleState extends MusicBeatState
 			transitioning = true;
 			// FlxG.sound.music.stop();
 			FlxTween.cancelTweensOf(logoBl);
-			FlxTween.cancelTweensOf(logoTE);
-			FlxTween.cancelTweensOf(gfDance);
 			FlxTween.tween(logoBl, {y: 2000}, 0.8, {ease: FlxEase.quadInOut});
-			FlxTween.tween(logoTE, {y: 2000}, 0.8, {ease: FlxEase.quadInOut, startDelay: 0.4});
-			FlxTween.tween(gfDance, {y: 2000}, 0.8, {ease: FlxEase.quadInOut, startDelay: 0.425});
 			FlxTween.tween(titleText, {y: 2000}, 0.8, {ease: FlxEase.quadInOut, startDelay: 0.45});
 			
 			new FlxTimer().start(1, function(tmr:FlxTimer)
 			{
+				if(FlxG.save.data.hasSeenWarning)
 					FlxG.switchState(new MainMenuState());
+				else
+					FlxG.switchState(new IntroWarningState());
 			});
 			// FlxG.sound.play(Paths.music('titleShoot'), 0.7);
 		}
@@ -339,13 +334,8 @@ class TitleState extends MusicBeatState
 		super.beatHit();
 
 		logoBl.animation.play('bump', true);
-		logoTE.animation.play('bump', true);
 		danceLeft = !danceLeft;
 
-		if (danceLeft)
-			gfDance.animation.play('danceRight');
-		else
-			gfDance.animation.play('danceLeft');
 
 		FlxG.log.add(curBeat);
 
@@ -412,19 +402,11 @@ class TitleState extends MusicBeatState
 			FlxG.camera.flash(FlxColor.WHITE, 4);
 			remove(credGroup);
 			skippedIntro = true;
-			FlxTween.tween(logoBl, {y: -50}, 0.8, {ease: FlxEase.quadInOut, onComplete: function(twn:FlxTween)
-				{
-					FlxTween.tween(logoTE, {x: 580}, 0.5, {ease: FlxEase.quadInOut});
-					FlxTween.tween(gfDance, {y: 100}, 0.5, {ease: FlxEase.quadInOut});
-					FlxTween.tween(titleText, {y: FlxG.height * 0.725}, 0.5, {ease: FlxEase.quadInOut, onComplete: function(twn2:FlxTween)
-					{
-						FlxTween.tween(logoBl, {y: -50 + 50}, 2.5, {ease: FlxEase.quadInOut, type: PINGPONG, startDelay: 1.2});
-						FlxTween.tween(gfDance, {y: -30 + 100}, 2.5, {ease: FlxEase.quadInOut, type: PINGPONG, startDelay: 1.2});
-						FlxTween.tween(logoTE, {y: 450 - 30}, 2.5, {ease: FlxEase.quadInOut, type: PINGPONG, startDelay: 1.2});
-						
-					}});
-				}});
+			FlxTween.tween(titleText, {y: FlxG.height * 0.725}, 0.5, {ease: FlxEase.quadInOut, onComplete: function(twn2:FlxTween)
+			{
+				FlxTween.tween(logoBl, {y: -50 + 50}, 2.5, {ease: FlxEase.quadInOut, type: PINGPONG, startDelay: 1.2});
 				
+			}});			
 		}
 	}
 }

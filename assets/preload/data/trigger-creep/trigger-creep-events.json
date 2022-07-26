@@ -180,16 +180,6 @@
 			{
 				"sectionNotes": [
 					[
-						44911.7647058823,
-						0,
-						"callFunction",
-						[
-							"toggleAlt",
-							0,
-							0
-						]
-					],
-					[
 						44823.5294117647,
 						0,
 						"changeZoom",
@@ -348,6 +338,9 @@
 						]
 					]
 				]
+			},
+			{
+				"sectionNotes": []
 			},
 			{
 				"sectionNotes": []

@@ -147,6 +147,28 @@ class BGForNotesOption extends Option
 	}
 }
 
+class HasEventsOption extends Option
+{
+	public function new()
+	{
+		super();
+	}
+
+	public override function press(changeData:Bool):Bool
+	{
+		if(changeData)
+			FlxG.save.data.eventThing = !FlxG.save.data.eventThing;
+		acceptValues = FlxG.save.data.eventThing;
+		display = updateDisplay();
+		return true;
+	}
+
+	private override function updateDisplay():String
+	{
+		return "Events "/* + (!FlxG.save.data.downscroll ? "off" : "on")*/;
+	}
+}
+
 class HitsoundsOption extends Option
 {
 	public function new()

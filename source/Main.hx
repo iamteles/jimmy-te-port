@@ -18,7 +18,8 @@ class Main extends Sprite
 	var framerate:Int = 120; // How many frames per second the game should run at.
 	var skipSplash:Bool = true; // Whether to skip the flixel splash screen that appears in release mode.
 	var startFullscreen:Bool = false; // Whether to start the game in fullscreen on desktop targets
-	public static var engineVersion:String = "1.7.0 [Pre-release]";
+	public static var engineVersion:String = "1.7.0";
+	public static var gameVersion:String = "2.0 (PRE-RELEASE PLAYTESTING BUILD)";
 
 	// You can pretty much ignore everything from here on - your code should go in your states.
 	public static function setupSaveData()
@@ -43,6 +44,8 @@ class Main extends Sprite
 			FlxG.save.data.botAutoPlay = false;
 		if(FlxG.save.data.fps == null)
 			FlxG.save.data.fps = true;
+		if(FlxG.save.data.eventThing == null)
+			FlxG.save.data.eventThing = true;
 		if(FlxG.save.data.framerateDraw == null)
 			FlxG.save.data.framerateDraw = 120;
 		if(FlxG.save.data.shadersOn == null)

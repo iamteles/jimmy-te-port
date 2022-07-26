@@ -1,0 +1,450 @@
+{
+	"song": {
+		"notes": [
+			{
+				"sectionNotes": [
+					[
+						303.030303030303,
+						1,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					],
+					[
+						303.030303030303,
+						0,
+						"changeCameraBeat",
+						[
+							2,
+							2,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						29393.9393939394,
+						0,
+						"callFunction",
+						[
+							"breakBG",
+							0,
+							0
+						]
+					],
+					[
+						29393.9393939394,
+						1,
+						"vignette",
+						[
+							"ENABLE",
+							0.1,
+							0
+						]
+					],
+					[
+						29393.9393939394,
+						2,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					],
+					[
+						29393.9393939394,
+						3,
+						"changeCameraBeat",
+						[
+							2,
+							1,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						68181.8181818183,
+						0,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					],
+					[
+						68181.8181818183,
+						1,
+						"changeZoom",
+						[
+							0.3,
+							0,
+							0
+						]
+					],
+					[
+						68181.8181818183,
+						2,
+						"changeCameraBeat",
+						[
+							2,
+							2,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						77878.787878788,
+						0,
+						"changeCameraBeat",
+						[
+							2,
+							1,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						87575.7575757577,
+						0,
+						"callFunction",
+						[
+							"breakingAnim",
+							0,
+							0
+						]
+					],
+					[
+						87575.7575757577,
+						1,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					],
+					[
+						87575.7575757577,
+						2,
+						"pointAtGF",
+						[
+							"ENABLE",
+							0,
+							0
+						]
+					],
+					[
+						87575.7575757577,
+						3,
+						"changeBFCharacter",
+						[
+							"falling",
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						110662.878787879,
+						1,
+						"vignette",
+						[
+							"ENABLE",
+							1,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			}
+		]
+	}
+}

@@ -53,9 +53,16 @@ class FreeplayState extends MusicBeatState
 
 	private var iconArray:Array<HealthIcon> = [];
 
+	var leSongList:String = 'freeplaySonglist';
+
 	override function create()
 	{
-		var initSonglist = CoolUtil.coolTextFile(Paths.txt('freeplaySonglist'));
+		if(!FlxG.save.data.finishedWeekTwo)
+			leSongList = 'freeplaySonglistLOCKED';
+		else
+			leSongList = 'freeplaySonglist';
+
+		var initSonglist = CoolUtil.coolTextFile(Paths.txt(leSongList));
 
 		for (i in 0...initSonglist.length)
 		{
@@ -260,8 +267,17 @@ class FreeplayState extends MusicBeatState
 		Assets.exists(Paths.json(songs[curSelected].songName.toLowerCase() + "/" + songs[curSelected].songName.toLowerCase() + "-funky"))
 		 && 
 		Assets.exists(Paths.instFunky(songs[curSelected].songName.toLowerCase()));
-		
-		if (accepted)
+		if (songs[curSelected].songName.toLowerCase() == "killcount" && accepted && curDifficulty == 1)
+		{
+			FlxG.camera.shake(1 / 100, 0.1);
+			FlxG.sound.play(Paths.sound('noEntry'), 0.4);
+		}
+		else if (songs[curSelected].songName.toLowerCase() == "killcount" && accepted && curDifficulty == 0)
+		{
+			FlxG.camera.shake(1 / 100, 0.1);
+			FlxG.sound.play(Paths.sound('noEntry'), 0.4);
+		}
+		else if (accepted)
 		{
 			trace(curSelectedSongHaveFunkyDiff);
 			trace(Paths.instFunky(songs[curSelected].songName.toLowerCase()));

@@ -30,6 +30,19 @@ class MainMenuState extends MusicBeatState
 
 	var leftArrow:Sprite;
 	var rightArrow:Sprite;
+	var allowedKeys:String = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+	var easterEggKeysBuffer:String = '';
+
+	var wkey:Bool = false;
+	var ekey:Bool = false;
+	var dkey:Bool = false;
+	var nkey:Bool = false;
+	var e2key:Bool = false;
+	var skey:Bool = false;
+	var d2key:Bool = false;
+	var akey:Bool = false;
+	var ykey:Bool = false;
+
 	public override function create()
 	{
 		super.create();
@@ -82,7 +95,7 @@ class MainMenuState extends MusicBeatState
 		add(leftArrow);
 		add(rightArrow);
 
-		var versionShit:FlxText = new FlxText(5, FlxG.height - 36, 0, "YLYL Funkin:" + " 1.8.8" , 12);
+		var versionShit:FlxText = new FlxText(5, FlxG.height - 36, 0, "YLYL Funkin:" + Main.gameVersion , 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
@@ -101,13 +114,6 @@ class MainMenuState extends MusicBeatState
 			changeItem(-1);
 		if(controls.RIGHT_PUI)
 			changeItem(1);
-		if(FlxG.keys.justPressed.SEVEN)
-		{
-			PlayState.SONG = Song.loadFromJson(Highscore.formatSong('robbery', 2), 'robbery');
-			PlayState.isStoryMode = false;
-			PlayState.storyDifficulty = 2;
-			LoadingState.loadAndSwitchState(new PlayState());
-		}
 		if(controls.LEFTUI)
 		{
 			leftArrow.color = FlxColor.YELLOW;
@@ -132,6 +138,25 @@ class MainMenuState extends MusicBeatState
 			rightArrow.alpha = 0.95;
 			rightArrow.setGraphicSize(Std.int(rightArrow.width * 0.5));
 		}
+
+		if(FlxG.keys.justPressed.W)
+			wkey = true;
+		if(FlxG.keys.justPressed.E && wkey)
+			ekey = true;
+		if(FlxG.keys.justPressed.D && wkey && ekey)
+			dkey = true;
+		if(FlxG.keys.justPressed.N && wkey && ekey && dkey)
+			nkey = true;
+		if(FlxG.keys.justPressed.E && wkey && ekey && dkey && nkey)
+			e2key = true;
+		if(FlxG.keys.justPressed.S && wkey && ekey && dkey && nkey && e2key)
+			skey = true;
+		if(FlxG.keys.justPressed.D && wkey && ekey && dkey && nkey && e2key && skey)
+			d2key = true;
+		if(FlxG.keys.justPressed.A && wkey && ekey && dkey && nkey && e2key && skey && d2key)
+			akey = true;
+		if(FlxG.keys.justPressed.Y && wkey && ekey && dkey && nkey && e2key && skey && d2key && akey)
+			FlxG.switchState(new GalleryState());
 
 		if(controls.ACCEPT && !startedChangeState)
 		{
@@ -162,11 +187,11 @@ class MainMenuState extends MusicBeatState
 						{
 							case "story mode":
 								//FlxG.switchState(new StoryMenuState());
-								FlxG.switchState(new FreeplayState());
+								FlxG.switchState(new StoryMenuState());
 							case "freeplay":
 								FlxG.switchState(new FreeplayState());
 							case "credits":
-								FlxG.switchState(new FreeplayState());
+								FlxG.switchState(new CreditsState());
 							case "options":
 								FlxG.switchState(new OptionsMenu());
 						}

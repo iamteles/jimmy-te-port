@@ -1,0 +1,580 @@
+{
+	"song": {
+		"notes": [
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						6335.74007220216,
+						1,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					],
+					[
+						6335.74007220216,
+						0,
+						"changeZoom",
+						[
+							0.2,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						14729.2418772563,
+						0,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					],
+					[
+						14729.2418772563,
+						1,
+						"changeZoom",
+						[
+							0,
+							0,
+							0
+						]
+					],
+					[
+						14729.2418772563,
+						2,
+						"changeCameraBeat",
+						[
+							1,
+							1,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						48519.8555956679,
+						0,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					],
+					[
+						48519.8555956679,
+						1,
+						"changeZoom",
+						[
+							0.3,
+							0,
+							0
+						]
+					],
+					[
+						48519.8555956679,
+						2,
+						"changeCameraBeat",
+						[
+							1,
+							4,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						57184.1155234657,
+						0,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						65577.6173285198,
+						0,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					],
+					[
+						65577.6173285198,
+						1,
+						"changeZoom",
+						[
+							0,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						82527.0758122743,
+						1,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					],
+					[
+						82527.0758122743,
+						0,
+						"changeZoom",
+						[
+							0.15,
+							0,
+							0
+						]
+					],
+					[
+						82527.0758122743,
+						2,
+						"changeCameraBeat",
+						[
+							1,
+							1,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": [
+					[
+						116967.509025271,
+						1,
+						"flashCamera",
+						[
+							0.5,
+							0,
+							0
+						]
+					]
+				]
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			},
+			{
+				"sectionNotes": []
+			}
+		]
+	}
+}
