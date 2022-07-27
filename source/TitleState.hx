@@ -104,6 +104,8 @@ class TitleState extends MusicBeatState
 	var danceLeft:Bool = false;
 	var titleText:Sprite;
 
+	var hasPlayed:Bool = false;
+
 	function startIntro()
 	{
 		if (!initialized)
@@ -128,8 +130,10 @@ class TitleState extends MusicBeatState
 			// music.loadStream(Paths.music('freakyMenu'));
 			// FlxG.sound.list.add(music);
 			// music.play();
-			FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
+			FlxG.sound.playMusic(Paths.music('menuIntro'), 0);
 			FlxG.sound.music.fadeIn(4, 0, 0.7);
+
+			hasPlayed = true;
 		}
 
 		Conductor.changeBPM(102);
@@ -235,7 +239,10 @@ class TitleState extends MusicBeatState
 
 		if (FlxG.sound.music != null)
 			Conductor.songPosition = FlxG.sound.music.time;
+		//else
+		//	FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
 		// FlxG.watch.addQuick('amp', FlxG.sound.music.amplitude);
+
 
 		if (FlxG.keys.justPressed.F)
 		{

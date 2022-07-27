@@ -24,7 +24,7 @@ using StringTools;
 class MainMenuState extends MusicBeatState
 {
 	public var curSelected:Int = 0;
-	public static var items:Array<String> = ["story mode", "freeplay", "jimmy", "bryce", "zach", "credits", "options"];
+	public static var items:Array<String> = ["story", "freeplay", "jimmy", "bryce", "zach", "credits", "options"];
 	public static var bgs:Array<String> = ["menuBGblurred"];
 	public var menuItems:FlxTypedGroup<Sprite>;
 
@@ -185,7 +185,7 @@ class MainMenuState extends MusicBeatState
 					{
 						switch (items[curSelected])
 						{
-							case "story mode":
+							case "story":
 								//FlxG.switchState(new StoryMenuState());
 								FlxG.switchState(new StoryMenuState());
 							case "freeplay":

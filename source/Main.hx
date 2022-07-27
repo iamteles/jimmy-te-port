@@ -19,7 +19,7 @@ class Main extends Sprite
 	var skipSplash:Bool = true; // Whether to skip the flixel splash screen that appears in release mode.
 	var startFullscreen:Bool = false; // Whether to start the game in fullscreen on desktop targets
 	public static var engineVersion:String = "1.7.0";
-	public static var gameVersion:String = "2.0 (PRE-RELEASE PLAYTESTING BUILD)";
+	public static var gameVersion:String = "2.0.0";
 
 	// You can pretty much ignore everything from here on - your code should go in your states.
 	public static function setupSaveData()

@@ -115,7 +115,12 @@ class PreloadingState extends MusicBeatState
 	{
 		super.create();
 		
-		var randomBG:Int = FlxG.random.int(1,4);
+		var unlockNumber:Int = 1;
+
+		if(FlxG.save.data.finishedWeekTwo)
+			unlockNumber = 4;
+
+		var randomBG:Int = FlxG.random.int(1, unlockNumber);
 
 		var bg:Sprite = new Sprite().loadGraphics(Paths.image('loadingScreens/load' + randomBG));
 		//var bg:Sprite = new Sprite().loadGraphics(Paths.image('loadingScreens/load'));

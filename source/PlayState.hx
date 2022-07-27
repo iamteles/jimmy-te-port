@@ -501,6 +501,7 @@ class PlayState extends MusicBeatState
 					bgBREAKING.visible = false;
 	
 					add(bgBREAKING);
+					FlxG.save.data.finishedWeekOne = true;
 
 				}
 				case 'cutie-patootie' | 'raw' | 'bryce':
@@ -517,6 +518,7 @@ class PlayState extends MusicBeatState
 					var bg:BGSprite = new BGSprite("daHall", -1200, -200, 1, 1);
 					bg.setGraphicSize(Std.int(bg.width * 1.8));
 					add(bg);
+					FlxG.save.data.finishedma = true;
 				}
 				case 'mediashare':
 				{
@@ -532,6 +534,7 @@ class PlayState extends MusicBeatState
 					groundBG.scrollFactor.set(1, 1);
 					groundBG.active = false;
 					add(groundBG);
+					FlxG.save.data.finishedM = true;
 				}
 				case 'killcount':
 				{
@@ -539,6 +542,8 @@ class PlayState extends MusicBeatState
 					var bg:BGSprite = new BGSprite("killcount/back", -500, -400, 1, 1);
 					//bg.setGraphicSize(Std.int(bg.width * 1.8));
 					add(bg);
+					
+					FlxG.save.data.finishedK = true;
 				}
 				case 'trigger-creep':
 				{
@@ -556,6 +561,7 @@ class PlayState extends MusicBeatState
 					var bg:BGSprite = new BGSprite("skeld", -500, -300, 1, 1);
 					//bg.setGraphicSize(Std.int(bg.width * 1.8));
 					add(bg);
+					FlxG.save.data.finishedJ = true;
 				}
 				default:
 				{
@@ -2806,6 +2812,16 @@ class PlayState extends MusicBeatState
 					if(daNote.altNote)
 						altAnim = '-alt';
 					
+					if (SONG.song.toLowerCase() == 'holding-on' && health > 0.05)
+					{
+						if (daNote.isSustainNote)
+							{
+								health -= 0.005;
+							}
+							else
+								health -= 0.025;
+					}
+
 					if (animSuf)
 					{
 						switch (Math.abs(daNote.noteData))
@@ -2979,7 +2995,15 @@ class PlayState extends MusicBeatState
 					case 'trigger-creep':
 						FlxG.switchState(new ThanksState());
 					default:
-						FlxG.switchState(new StoryMenuState());
+						if(FlxG.save.data.finishedK && FlxG.save.data.finishedJ && FlxG.save.data.finishedM && FlxG.save.data.finishedma && !FlxG.save.data.seenCode)
+						{
+							FlxG.save.data.seenCode = true;
+							FlxG.switchState(new FinalState());
+						}
+						else
+						{
+							FlxG.switchState(new StoryMenuState());
+						}
 				}
 
 				// if ()
@@ -3060,16 +3084,17 @@ class PlayState extends MusicBeatState
 				FlxG.sound.music.stop();
 
 				LoadingState.loadAndSwitchState(new PlayState());
-				}
+			}
 
 				
-			}
+		}
 		
 		else
 		{
 			trace('WENT BACK TO FREEPLAY??');
 			FlxG.sound.music.stop();
 			LoadingState.loadAndSwitchState(new FreeplayState(), true);
+
 		}
 	}
 
@@ -3883,10 +3908,10 @@ class PlayState extends MusicBeatState
 					{
 						camZoomAditive = -0.5;
 					}
-					case 1167: //1167
-					{
-						bgBREAKING.visible = false;
-					}
+				}
+				if(curStep >= 1167 && curStep < 9999) //1167
+				{
+					bgBREAKING.visible = false; // dont even ask
 				}
 			case 'bryce':
 				switch (curStep)
